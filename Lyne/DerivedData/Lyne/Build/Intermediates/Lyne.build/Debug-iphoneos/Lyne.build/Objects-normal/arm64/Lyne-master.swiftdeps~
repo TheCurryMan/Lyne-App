@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "b27a792b4f895e0bcdedac1f73defbe8"
-build_time: [552952123, 648660000]
+options: "1d3b2512c73e285869e5d31ade45f997"
+build_time: [552954909, 981880000]
 inputs:
-  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/JoinViewController.swift": [552952123, 0]
-  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/AppDelegate.swift": [552950032, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/JoinViewController.swift": !dirty [552954909, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/AppDelegate.swift": !dirty [552950032, 0]

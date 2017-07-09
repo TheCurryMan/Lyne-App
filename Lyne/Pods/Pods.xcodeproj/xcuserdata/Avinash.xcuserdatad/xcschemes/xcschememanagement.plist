@@ -19,13 +19,24 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PulsingHalo.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>3BC934AF7EA2FB4553D4DE748A9E33A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5EDAED8B2933E03866D9E666E157D9D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68A111ED1695040EBD9E45EF5E62349B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

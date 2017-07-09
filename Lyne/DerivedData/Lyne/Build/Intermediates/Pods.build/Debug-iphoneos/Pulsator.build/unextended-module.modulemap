@@ -1,0 +1,10 @@
+framework module Pulsator {
+  umbrella header "Pulsator-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Pulsator.__Swift {
+    exclude header "Pulsator-Swift.h"
+}

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "bbe6b8d55ecc453a76ec2e8dd629bd8c"
+build_time: [552952625, 31874000]
+inputs:
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/Pulsator/Pulsator/Pulsator.swift": [552952597, 0]

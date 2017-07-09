@@ -7,7 +7,7 @@ target 'Lyne' do
 
   # Pods for Lyne
 
-pod "PulsingHalo"
+
 
   target 'LyneTests' do
     inherit! :search_paths

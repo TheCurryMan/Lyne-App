@@ -157,8 +157,8 @@ SWIFT_CLASS("_TtC4Lyne11AppDelegate")
 @class MKMapView;
 @class CLLocationManager;
 @class CLLocation;
-@protocol MKOverlay;
-@class MKOverlayRenderer;
+@protocol MKAnnotation;
+@class MKAnnotationView;
 @class NSBundle;
 @class NSCoder;
 
@@ -170,8 +170,8 @@ SWIFT_CLASS("_TtC4Lyne18JoinViewController")
 - (void)didReceiveMemoryWarning;
 - (IBAction)locateMe;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (void)addRadiusCircleWithLocation:(CLLocation * _Nonnull)location;
-- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay SWIFT_WARN_UNUSED_RESULT;
+- (void)addAnnotationsWithCoords:(NSArray<CLLocation *> * _Nonnull)coords;
+- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

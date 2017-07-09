@@ -1,0 +1,70 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/Pods_Lyne.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Lyne-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/Target Support Files/Pods-Lyne/Pods-Lyne-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Lyne-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/Pods_Lyne.framework/Headers/Pods_Lyne-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/Pods_Lyne.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Pods-Lyne.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/PulsingHalo/PulsingHalo.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PulsingHalo-Swift.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/PulsingHalo/PulsingHalo.framework/Headers/PulsingHalo-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PulsingHalo-umbrella.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/Target Support Files/PulsingHalo/PulsingHalo-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "PulsingHalo.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/PulsingHalo/PulsingHalo/PulsingHalo.h"
+        },
+        {
+          'type': 'file',
+          'name': "PulsingHaloLayer.h",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/PulsingHalo/PulsingHalo/PulsingHaloLayer.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/PulsingHalo/PulsingHalo.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/PulsingHalo.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
