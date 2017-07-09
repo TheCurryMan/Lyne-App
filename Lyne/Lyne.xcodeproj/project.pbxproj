@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C8D6478D8E4B0A2207FFB7A /* Pods_Lyne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F86C031B68521841236CC60 /* Pods_Lyne.framework */; };
+		7D826156AFFC513CF7E3A1D9 /* Pods_LyneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F787C8732890D38F2EEAEE4 /* Pods_LyneUITests.framework */; };
+		E11AC0381F12D410003CAF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC0371F12D410003CAF69 /* AppDelegate.swift */; };
+		E11AC03D1F12D410003CAF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11AC03B1F12D410003CAF69 /* Main.storyboard */; };
+		E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11AC03E1F12D410003CAF69 /* Assets.xcassets */; };
+		E11AC0421F12D410003CAF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */; };
+		E11AC04D1F12D410003CAF69 /* LyneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC04C1F12D410003CAF69 /* LyneTests.swift */; };
+		E11AC0581F12D410003CAF69 /* LyneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC0571F12D410003CAF69 /* LyneUITests.swift */; };
+		E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC0651F12D459003CAF69 /* JoinViewController.swift */; };
+		FEC3F7BD4049A46EAD038932 /* Pods_LyneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E11AC0491F12D410003CAF69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E11AC02C1F12D410003CAF69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E11AC0331F12D410003CAF69;
+			remoteInfo = Lyne;
+		};
+		E11AC0541F12D410003CAF69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E11AC02C1F12D410003CAF69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E11AC0331F12D410003CAF69;
+			remoteInfo = Lyne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19B907B4ABC52D57EB94B296 /* Pods-LyneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B403E749C0F28BCC55CDAAA /* Pods-LyneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F787C8732890D38F2EEAEE4 /* Pods_LyneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C94CAB40A90079CFBB1A4FE /* Pods-LyneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F86C031B68521841236CC60 /* Pods_Lyne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lyne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBE26E978FC1024E9CBF7BD /* Pods-LyneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8864A6BC4581F68960B59C0D /* Pods-Lyne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lyne/Pods-Lyne.debug.xcconfig"; sourceTree = "<group>"; };
+		8BCCAE4602E5C1A7B7FE0EDF /* Pods-Lyne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyne.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lyne/Pods-Lyne.release.xcconfig"; sourceTree = "<group>"; };
+		E11AC0341F12D410003CAF69 /* Lyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11AC0371F12D410003CAF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E11AC03C1F12D410003CAF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E11AC03E1F12D410003CAF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11AC0411F12D410003CAF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E11AC0431F12D410003CAF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11AC0481F12D410003CAF69 /* LyneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11AC04C1F12D410003CAF69 /* LyneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyneTests.swift; sourceTree = "<group>"; };
+		E11AC04E1F12D410003CAF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11AC0531F12D410003CAF69 /* LyneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11AC0571F12D410003CAF69 /* LyneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyneUITests.swift; sourceTree = "<group>"; };
+		E11AC0591F12D410003CAF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11AC0651F12D459003CAF69 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11AC0311F12D410003CAF69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8D6478D8E4B0A2207FFB7A /* Pods_Lyne.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11AC0451F12D410003CAF69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC3F7BD4049A46EAD038932 /* Pods_LyneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11AC0501F12D410003CAF69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D826156AFFC513CF7E3A1D9 /* Pods_LyneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46D63FFFCEEAC1C4E27FEBE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F86C031B68521841236CC60 /* Pods_Lyne.framework */,
+				264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */,
+				2F787C8732890D38F2EEAEE4 /* Pods_LyneUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E11AC02B1F12D410003CAF69 = {
+			isa = PBXGroup;
+			children = (
+				E11AC0361F12D410003CAF69 /* Lyne */,
+				E11AC04B1F12D410003CAF69 /* LyneTests */,
+				E11AC0561F12D410003CAF69 /* LyneUITests */,
+				E11AC0351F12D410003CAF69 /* Products */,
+				E521BDB71A9566FA73E233A7 /* Pods */,
+				46D63FFFCEEAC1C4E27FEBE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E11AC0351F12D410003CAF69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11AC0341F12D410003CAF69 /* Lyne.app */,
+				E11AC0481F12D410003CAF69 /* LyneTests.xctest */,
+				E11AC0531F12D410003CAF69 /* LyneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11AC0361F12D410003CAF69 /* Lyne */ = {
+			isa = PBXGroup;
+			children = (
+				E11AC0371F12D410003CAF69 /* AppDelegate.swift */,
+				E11AC0651F12D459003CAF69 /* JoinViewController.swift */,
+				E11AC03B1F12D410003CAF69 /* Main.storyboard */,
+				E11AC03E1F12D410003CAF69 /* Assets.xcassets */,
+				E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */,
+				E11AC0431F12D410003CAF69 /* Info.plist */,
+			);
+			path = Lyne;
+			sourceTree = "<group>";
+		};
+		E11AC04B1F12D410003CAF69 /* LyneTests */ = {
+			isa = PBXGroup;
+			children = (
+				E11AC04C1F12D410003CAF69 /* LyneTests.swift */,
+				E11AC04E1F12D410003CAF69 /* Info.plist */,
+			);
+			path = LyneTests;
+			sourceTree = "<group>";
+		};
+		E11AC0561F12D410003CAF69 /* LyneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E11AC0571F12D410003CAF69 /* LyneUITests.swift */,
+				E11AC0591F12D410003CAF69 /* Info.plist */,
+			);
+			path = LyneUITests;
+			sourceTree = "<group>";
+		};
+		E521BDB71A9566FA73E233A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8864A6BC4581F68960B59C0D /* Pods-Lyne.debug.xcconfig */,
+				8BCCAE4602E5C1A7B7FE0EDF /* Pods-Lyne.release.xcconfig */,
+				19B907B4ABC52D57EB94B296 /* Pods-LyneTests.debug.xcconfig */,
+				5C94CAB40A90079CFBB1A4FE /* Pods-LyneTests.release.xcconfig */,
+				1B403E749C0F28BCC55CDAAA /* Pods-LyneUITests.debug.xcconfig */,
+				6DBE26E978FC1024E9CBF7BD /* Pods-LyneUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11AC0331F12D410003CAF69 /* Lyne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11AC05C1F12D410003CAF69 /* Build configuration list for PBXNativeTarget "Lyne" */;
+			buildPhases = (
+				80BE5F6D9916A4BDE888E84E /* [CP] Check Pods Manifest.lock */,
+				E11AC0301F12D410003CAF69 /* Sources */,
+				E11AC0311F12D410003CAF69 /* Frameworks */,
+				E11AC0321F12D410003CAF69 /* Resources */,
+				C87E02DB52FE1323A1DC2DE3 /* [CP] Embed Pods Frameworks */,
+				8D313E24B5649536A39F58B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lyne;
+			productName = Lyne;
+			productReference = E11AC0341F12D410003CAF69 /* Lyne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E11AC0471F12D410003CAF69 /* LyneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11AC05F1F12D410003CAF69 /* Build configuration list for PBXNativeTarget "LyneTests" */;
+			buildPhases = (
+				6BDC0E76BE6E24F304D7FF32 /* [CP] Check Pods Manifest.lock */,
+				E11AC0441F12D410003CAF69 /* Sources */,
+				E11AC0451F12D410003CAF69 /* Frameworks */,
+				E11AC0461F12D410003CAF69 /* Resources */,
+				D089EB7A7A606FA0438D9049 /* [CP] Embed Pods Frameworks */,
+				1DD75957073BF59E04E0714F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11AC04A1F12D410003CAF69 /* PBXTargetDependency */,
+			);
+			name = LyneTests;
+			productName = LyneTests;
+			productReference = E11AC0481F12D410003CAF69 /* LyneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E11AC0521F12D410003CAF69 /* LyneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11AC0621F12D410003CAF69 /* Build configuration list for PBXNativeTarget "LyneUITests" */;
+			buildPhases = (
+				01580518E1AB4891C0293BB8 /* [CP] Check Pods Manifest.lock */,
+				E11AC04F1F12D410003CAF69 /* Sources */,
+				E11AC0501F12D410003CAF69 /* Frameworks */,
+				E11AC0511F12D410003CAF69 /* Resources */,
+				E956CC09C34451E0D66B6A06 /* [CP] Embed Pods Frameworks */,
+				E67E02B1EB8C9E81E604B877 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11AC0551F12D410003CAF69 /* PBXTargetDependency */,
+			);
+			name = LyneUITests;
+			productName = LyneUITests;
+			productReference = E11AC0531F12D410003CAF69 /* LyneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11AC02C1F12D410003CAF69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Avinash Jain";
+				TargetAttributes = {
+					E11AC0331F12D410003CAF69 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3V593WX43L;
+						ProvisioningStyle = Automatic;
+					};
+					E11AC0471F12D410003CAF69 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3V593WX43L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E11AC0331F12D410003CAF69;
+					};
+					E11AC0521F12D410003CAF69 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3V593WX43L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E11AC0331F12D410003CAF69;
+					};
+				};
+			};
+			buildConfigurationList = E11AC02F1F12D410003CAF69 /* Build configuration list for PBXProject "Lyne" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11AC02B1F12D410003CAF69;
+			productRefGroup = E11AC0351F12D410003CAF69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11AC0331F12D410003CAF69 /* Lyne */,
+				E11AC0471F12D410003CAF69 /* LyneTests */,
+				E11AC0521F12D410003CAF69 /* LyneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11AC0321F12D410003CAF69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11AC0421F12D410003CAF69 /* LaunchScreen.storyboard in Resources */,
+				E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */,
+				E11AC03D1F12D410003CAF69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11AC0461F12D410003CAF69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11AC0511F12D410003CAF69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01580518E1AB4891C0293BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1DD75957073BF59E04E0714F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BDC0E76BE6E24F304D7FF32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80BE5F6D9916A4BDE888E84E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D313E24B5649536A39F58B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lyne/Pods-Lyne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C87E02DB52FE1323A1DC2DE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lyne/Pods-Lyne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D089EB7A7A606FA0438D9049 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E67E02B1EB8C9E81E604B877 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E956CC09C34451E0D66B6A06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11AC0301F12D410003CAF69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */,
+				E11AC0381F12D410003CAF69 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11AC0441F12D410003CAF69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11AC04D1F12D410003CAF69 /* LyneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11AC04F1F12D410003CAF69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11AC0581F12D410003CAF69 /* LyneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E11AC04A1F12D410003CAF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E11AC0331F12D410003CAF69 /* Lyne */;
+			targetProxy = E11AC0491F12D410003CAF69 /* PBXContainerItemProxy */;
+		};
+		E11AC0551F12D410003CAF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E11AC0331F12D410003CAF69 /* Lyne */;
+			targetProxy = E11AC0541F12D410003CAF69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E11AC03B1F12D410003CAF69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11AC03C1F12D410003CAF69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11AC0411F12D410003CAF69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11AC05A1F12D410003CAF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E11AC05B1F12D410003CAF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11AC05D1F12D410003CAF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8864A6BC4581F68960B59C0D /* Pods-Lyne.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = Lyne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.Lyne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E11AC05E1F12D410003CAF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BCCAE4602E5C1A7B7FE0EDF /* Pods-Lyne.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = Lyne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.Lyne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E11AC0601F12D410003CAF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B907B4ABC52D57EB94B296 /* Pods-LyneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = LyneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.LyneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lyne.app/Lyne";
+			};
+			name = Debug;
+		};
+		E11AC0611F12D410003CAF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C94CAB40A90079CFBB1A4FE /* Pods-LyneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = LyneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.LyneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lyne.app/Lyne";
+			};
+			name = Release;
+		};
+		E11AC0631F12D410003CAF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B403E749C0F28BCC55CDAAA /* Pods-LyneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = LyneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.LyneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Lyne;
+			};
+			name = Debug;
+		};
+		E11AC0641F12D410003CAF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBE26E978FC1024E9CBF7BD /* Pods-LyneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = LyneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.LyneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Lyne;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11AC02F1F12D410003CAF69 /* Build configuration list for PBXProject "Lyne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11AC05A1F12D410003CAF69 /* Debug */,
+				E11AC05B1F12D410003CAF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11AC05C1F12D410003CAF69 /* Build configuration list for PBXNativeTarget "Lyne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11AC05D1F12D410003CAF69 /* Debug */,
+				E11AC05E1F12D410003CAF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E11AC05F1F12D410003CAF69 /* Build configuration list for PBXNativeTarget "LyneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11AC0601F12D410003CAF69 /* Debug */,
+				E11AC0611F12D410003CAF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E11AC0621F12D410003CAF69 /* Build configuration list for PBXNativeTarget "LyneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11AC0631F12D410003CAF69 /* Debug */,
+				E11AC0641F12D410003CAF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E11AC02C1F12D410003CAF69 /* Project object */;
+}
