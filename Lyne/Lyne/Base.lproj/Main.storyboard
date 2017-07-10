@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Create" id="Suh-CZ-gyO"/>
+                    <tabBarItem key="tabBarItem" title="Create" image="create.png" id="Suh-CZ-gyO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3JN-Er-4F1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,18 +46,30 @@
                                     <outlet property="delegate" destination="52b-4m-RMU" id="qz1-PI-cKY"/>
                                 </connections>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HKx-Lb-d2f">
+                                <rect key="frame" x="0.0" y="331" width="375" height="287"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="52b-4m-RMU" id="WBq-Zo-61a"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ixT-Fr-hQS" firstAttribute="top" secondItem="pss-YO-CAh" secondAttribute="bottom" constant="287" id="2eQ-Mf-jaD"/>
+                            <constraint firstItem="HKx-Lb-d2f" firstAttribute="leading" secondItem="2Nb-4A-fgq" secondAttribute="leading" id="Bgf-cJ-sks"/>
                             <constraint firstItem="pss-YO-CAh" firstAttribute="top" secondItem="9if-gF-ebv" secondAttribute="bottom" constant="23" id="IgJ-ZV-0gG"/>
                             <constraint firstAttribute="trailing" secondItem="pss-YO-CAh" secondAttribute="trailing" id="dsM-E9-oRP"/>
+                            <constraint firstItem="HKx-Lb-d2f" firstAttribute="top" secondItem="pss-YO-CAh" secondAttribute="bottom" id="gHp-0Z-5Bt"/>
+                            <constraint firstItem="HKx-Lb-d2f" firstAttribute="bottom" secondItem="ixT-Fr-hQS" secondAttribute="top" id="k4a-K1-mzN"/>
                             <constraint firstItem="pss-YO-CAh" firstAttribute="leading" secondItem="2Nb-4A-fgq" secondAttribute="leading" id="sEe-S9-EkA"/>
+                            <constraint firstAttribute="trailing" secondItem="HKx-Lb-d2f" secondAttribute="trailing" id="uOZ-lC-ATm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Join" id="87K-NU-7zV"/>
+                    <tabBarItem key="tabBarItem" title="Join" image="search.png" id="87K-NU-7zV"/>
                     <connections>
                         <outlet property="mapView" destination="pss-YO-CAh" id="RPz-fd-7px"/>
+                        <outlet property="tableView" destination="HKx-Lb-d2f" id="ovD-mk-emg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TpW-Dz-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,4 +95,8 @@
             <point key="canvasLocation" x="-1047" y="-322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="create.png" width="24" height="24"/>
+        <image name="search.png" width="24" height="24"/>
+    </resources>
 </document>

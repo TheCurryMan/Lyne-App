@@ -16,8 +16,11 @@
 		E11AC04D1F12D410003CAF69 /* LyneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC04C1F12D410003CAF69 /* LyneTests.swift */; };
 		E11AC0581F12D410003CAF69 /* LyneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC0571F12D410003CAF69 /* LyneUITests.swift */; };
 		E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC0651F12D459003CAF69 /* JoinViewController.swift */; };
+		E12189AC1F1348CE007946F5 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = E12189AB1F1348CE007946F5 /* search.png */; };
+		E12189AE1F1348EE007946F5 /* create.png in Resources */ = {isa = PBXBuildFile; fileRef = E12189AD1F1348EE007946F5 /* create.png */; };
 		E140C43E1F12E145000094A1 /* annotation1.png in Resources */ = {isa = PBXBuildFile; fileRef = E140C43D1F12E145000094A1 /* annotation1.png */; };
 		E140C4401F12E52F000094A1 /* annotation.png in Resources */ = {isa = PBXBuildFile; fileRef = E140C43F1F12E52F000094A1 /* annotation.png */; };
+		E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */; };
 		FEC3F7BD4049A46EAD038932 /* Pods_LyneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +64,11 @@
 		E11AC0571F12D410003CAF69 /* LyneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyneUITests.swift; sourceTree = "<group>"; };
 		E11AC0591F12D410003CAF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E11AC0651F12D459003CAF69 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		E12189AB1F1348CE007946F5 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		E12189AD1F1348EE007946F5 /* create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create.png; sourceTree = "<group>"; };
 		E140C43D1F12E145000094A1 /* annotation1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation1.png; sourceTree = "<group>"; };
 		E140C43F1F12E52F000094A1 /* annotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation.png; sourceTree = "<group>"; };
+		E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyneTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +137,12 @@
 				E11AC0371F12D410003CAF69 /* AppDelegate.swift */,
 				E11AC0651F12D459003CAF69 /* JoinViewController.swift */,
 				E11AC03B1F12D410003CAF69 /* Main.storyboard */,
+				E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */,
 				E11AC03E1F12D410003CAF69 /* Assets.xcassets */,
 				E140C43D1F12E145000094A1 /* annotation1.png */,
 				E140C43F1F12E52F000094A1 /* annotation.png */,
+				E12189AB1F1348CE007946F5 /* search.png */,
+				E12189AD1F1348EE007946F5 /* create.png */,
 				E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */,
 				E11AC0431F12D410003CAF69 /* Info.plist */,
 			);
@@ -292,8 +301,11 @@
 			files = (
 				E140C43E1F12E145000094A1 /* annotation1.png in Resources */,
 				E11AC0421F12D410003CAF69 /* LaunchScreen.storyboard in Resources */,
+				E12189AE1F1348EE007946F5 /* create.png in Resources */,
 				E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */,
+				E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */,
 				E11AC03D1F12D410003CAF69 /* Main.storyboard in Resources */,
+				E12189AC1F1348CE007946F5 /* search.png in Resources */,
 				E140C4401F12E52F000094A1 /* annotation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="17A264c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="join" rowHeight="80" id="rwu-jy-EPX" customClass="JoinTableViewCell" customModule="Lyne" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rwu-jy-EPX" id="amb-Fx-a3q">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lynbrook Yearbook Lyne! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNB-aO-HLo">
+                        <rect key="frame" x="8" y="8" width="300" height="30"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 people currently in line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vx-Sz-3Qy">
+                        <rect key="frame" x="8" y="50" width="289" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="mfI-jS-Riw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm4-FZ-KEl">
+                        <rect key="frame" x="306" y="0.0" width="61" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="iUi-N3-HsI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.3 mi." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11I-V0-9Kd">
+                        <rect key="frame" x="306" y="52" width="61" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BCy-tz-plc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Vx-Sz-3Qy" firstAttribute="top" secondItem="NNB-aO-HLo" secondAttribute="bottom" constant="12" id="4sS-rs-fY9"/>
+                    <constraint firstItem="11I-V0-9Kd" firstAttribute="top" secondItem="dm4-FZ-KEl" secondAttribute="bottom" constant="2" id="5Wc-Jv-o05"/>
+                    <constraint firstItem="NNB-aO-HLo" firstAttribute="leading" secondItem="amb-Fx-a3q" secondAttribute="leadingMargin" id="9mW-Oy-3e4"/>
+                    <constraint firstItem="11I-V0-9Kd" firstAttribute="leading" secondItem="4Vx-Sz-3Qy" secondAttribute="trailing" constant="9" id="BrK-fm-cE5"/>
+                    <constraint firstItem="dm4-FZ-KEl" firstAttribute="trailing" secondItem="amb-Fx-a3q" secondAttribute="trailingMargin" id="H3A-50-pDd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NNB-aO-HLo" secondAttribute="trailing" constant="59" id="HBK-nm-qkT"/>
+                    <constraint firstItem="NNB-aO-HLo" firstAttribute="leading" secondItem="4Vx-Sz-3Qy" secondAttribute="leading" id="Hec-75-J6q"/>
+                    <constraint firstItem="dm4-FZ-KEl" firstAttribute="trailing" secondItem="11I-V0-9Kd" secondAttribute="trailing" id="Nzc-Hj-wbn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4Vx-Sz-3Qy" secondAttribute="bottom" constant="0.5" id="OMw-sa-7Sm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="11I-V0-9Kd" secondAttribute="bottom" constant="-1.5" id="b6h-q8-n55"/>
+                    <constraint firstItem="NNB-aO-HLo" firstAttribute="top" secondItem="amb-Fx-a3q" secondAttribute="topMargin" id="dbW-oh-GkA"/>
+                    <constraint firstItem="dm4-FZ-KEl" firstAttribute="top" secondItem="amb-Fx-a3q" secondAttribute="top" id="sFh-Hg-4mB"/>
+                    <constraint firstItem="dm4-FZ-KEl" firstAttribute="leading" secondItem="11I-V0-9Kd" secondAttribute="leading" id="tbB-8X-7M8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lyneDistanceLabel" destination="11I-V0-9Kd" id="IDw-F0-biL"/>
+                <outlet property="lyneNameLabel" destination="NNB-aO-HLo" id="oJ8-Ye-Rey"/>
+                <outlet property="lynePeopleLabel" destination="4Vx-Sz-3Qy" id="WX6-kQ-7Sc"/>
+                <outlet property="lynePositionLabel" destination="dm4-FZ-KEl" id="XQS-GU-0uM"/>
+            </connections>
+            <point key="canvasLocation" x="-10.5" y="-17"/>
+        </tableViewCell>
+    </objects>
+</document>

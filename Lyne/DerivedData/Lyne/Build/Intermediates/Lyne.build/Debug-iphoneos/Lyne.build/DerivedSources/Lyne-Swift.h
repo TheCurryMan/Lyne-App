@@ -135,6 +135,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import CoreLocation;
 @import MapKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -154,17 +155,31 @@ SWIFT_CLASS("_TtC4Lyne11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC4Lyne17JoinTableViewCell")
+@interface JoinTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lynePeopleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lynePositionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneDistanceLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MKMapView;
+@class UITableView;
 @class CLLocationManager;
 @class CLLocation;
 @protocol MKAnnotation;
 @class MKAnnotationView;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC4Lyne18JoinViewController")
-@interface JoinViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
+@interface JoinViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) CLLocationManager * _Nonnull locationManager;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -172,6 +187,9 @@ SWIFT_CLASS("_TtC4Lyne18JoinViewController")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)addAnnotationsWithCoords:(NSArray<CLLocation *> * _Nonnull)coords;
 - (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

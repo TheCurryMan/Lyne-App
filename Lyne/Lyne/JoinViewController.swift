@@ -9,14 +9,22 @@
 import UIKit
 import MapKit
 
+class JoinTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var lyneNameLabel: UILabel!
+    @IBOutlet weak var lynePeopleLabel: UILabel!
+    @IBOutlet weak var lynePositionLabel: UILabel!
+    @IBOutlet weak var lyneDistanceLabel: UILabel!
+    
+}
 
-
-class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    var locationManager = CLLocationManager()
+    @IBOutlet weak var tableView: UITableView!
     
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +36,9 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         let locations = [CLLocation(latitude: 37.309489, longitude: -122.003984), CLLocation(latitude: 37.309536, longitude: -122.004575)]
       
         addAnnotations(coords: locations)
+        
+        tableView.register( UINib(nibName: "LyneTableViewCell", bundle:nil), forCellReuseIdentifier: "join")
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,6 +94,25 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         annotationView!.image = UIImage(named: "annotation.png")
         
         return annotationView
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : JoinTableViewCell = tableView.dequeueReusableCell(withIdentifier: "join") as! JoinTableViewCell
+        
+        cell.lyneDistanceLabel.text = "0.2 mi"
+        cell.lyneNameLabel.text = "Lynbrook Yearbook Lyne"
+        cell.lynePeopleLabel.text = "There are 19 people in the lyne"
+        cell.lynePositionLabel.text = "#35"
+        
+        return cell
     }
     
 }
