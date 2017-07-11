@@ -26,8 +26,10 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     @IBOutlet weak var tableView: UITableView!
     
     var locationManager = CLLocationManager()
-    
     var ref: DatabaseReference!
+    var lynes = [Lyne]()
+    
+    var userLocation = CLLocation()
     
     
     
@@ -36,12 +38,12 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         // Do any additional setup after loading the view, typically from a nib.
         locateMe()
         let locations = [CLLocation(latitude: 37.309489, longitude: -122.003984), CLLocation(latitude: 37.309536, longitude: -122.004575)]
-        addAnnotations(coords: locations)
         
         tableView.register( UINib(nibName: "LyneTableViewCell", bundle:nil), forCellReuseIdentifier: "join")
         
-        ref = Database.database().reference()
         
+        
+        getFirebaseData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,7 +51,24 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         // Dispose of any resources that can be recreated.
     }
     
+    func getFirebaseData(){
+        ref = Database.database().reference()
+        let postRef = ref.child("lynes")
+        _ = postRef.observe(DataEventType.value, with: { (snapshot) in
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            for lyne in postDict {
+                let pair = lyne.value as! [String:AnyObject]
+                let coords = CLLocationCoordinate2DMake(pair["lat"] as! CLLocationDegrees, pair["long"] as! CLLocationDegrees)
+                let newLyne = Lyne(name: pair["name"] as! String, num: pair["num"] as! Int, pos: pair["pos"] as! Int, loc: coords)
+                self.lynes.append(newLyne)
+            }
+            
+            self.tableView.reloadData()
+            self.addAnnotations()
+        })
+    }
     
+ 
     @IBAction func locateMe() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -61,8 +80,8 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let userLocation:CLLocation = locations[0] as CLLocation
-        
+        userLocation = locations[0] as CLLocation
+  
         locationManager.stopUpdatingLocation()
         
         let coordinations = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude,longitude: userLocation.coordinate.longitude)
@@ -72,13 +91,13 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
     }
     
-    func addAnnotations(coords: [CLLocation]){
-        for coord in coords{
-            let CLLCoordType = CLLocationCoordinate2D(latitude: coord.coordinate.latitude,
-                                                      longitude: coord.coordinate.longitude)
+    func addAnnotations(){
+        for lyne in lynes{
+            
+            let CLLCoordType = CLLocationCoordinate2D(latitude: lyne.loc.latitude,
+                                                      longitude: lyne.loc.longitude)
             let anno = MKPointAnnotation()
             anno.coordinate = CLLCoordType
-            
             
             mapView.addAnnotation(anno)
         }
@@ -100,7 +119,7 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return lynes.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -110,12 +129,20 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : JoinTableViewCell = tableView.dequeueReusableCell(withIdentifier: "join") as! JoinTableViewCell
         
-        cell.lyneDistanceLabel.text = "0.2 mi"
-        cell.lyneNameLabel.text = "Lynbrook Yearbook Lyne"
-        cell.lynePeopleLabel.text = "There are 19 people in the lyne"
-        cell.lynePositionLabel.text = "#35"
+        let currentLyne = lynes[indexPath.row]
+        cell.lyneDistanceLabel.text = String(format: "%.2f", getDistanceFromCurrentLocation(otherLoc: currentLyne.loc)) + "m"
+        cell.lyneNameLabel.text = currentLyne.name
+        cell.lynePeopleLabel.text = "There are \(currentLyne.num) people in the lyne"
+        cell.lynePositionLabel.text = "#\(currentLyne.pos)"
         
         return cell
+    }
+    
+    func getDistanceFromCurrentLocation(otherLoc: CLLocationCoordinate2D) -> CLLocationDistance
+    {
+        let lyneLoc = CLLocation.init(latitude: otherLoc.latitude, longitude: otherLoc.longitude)
+        return userLocation.distance(from: lyneLoc)
+        
     }
     
 }
