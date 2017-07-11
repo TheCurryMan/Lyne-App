@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
 
 class JoinTableViewCell: UITableViewCell {
     
@@ -26,18 +27,20 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     var locationManager = CLLocationManager()
     
+    var ref: DatabaseReference!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         locateMe()
-        mapView.isZoomEnabled = true
-        mapView.isRotateEnabled = true
-        
         let locations = [CLLocation(latitude: 37.309489, longitude: -122.003984), CLLocation(latitude: 37.309536, longitude: -122.004575)]
-      
         addAnnotations(coords: locations)
         
         tableView.register( UINib(nibName: "LyneTableViewCell", bundle:nil), forCellReuseIdentifier: "join")
+        
+        ref = Database.database().reference()
         
     }
     

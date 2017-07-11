@@ -18,6 +18,8 @@
 		E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC0651F12D459003CAF69 /* JoinViewController.swift */; };
 		E12189AC1F1348CE007946F5 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = E12189AB1F1348CE007946F5 /* search.png */; };
 		E12189AE1F1348EE007946F5 /* create.png in Resources */ = {isa = PBXBuildFile; fileRef = E12189AD1F1348EE007946F5 /* create.png */; };
+		E12A9F521F15642000509D39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E12A9F511F15642000509D39 /* GoogleService-Info.plist */; };
+		E12A9F541F15689B00509D39 /* Lyne.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A9F531F15689B00509D39 /* Lyne.swift */; };
 		E140C43E1F12E145000094A1 /* annotation1.png in Resources */ = {isa = PBXBuildFile; fileRef = E140C43D1F12E145000094A1 /* annotation1.png */; };
 		E140C4401F12E52F000094A1 /* annotation.png in Resources */ = {isa = PBXBuildFile; fileRef = E140C43F1F12E52F000094A1 /* annotation.png */; };
 		E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */; };
@@ -66,6 +68,8 @@
 		E11AC0651F12D459003CAF69 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		E12189AB1F1348CE007946F5 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		E12189AD1F1348EE007946F5 /* create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create.png; sourceTree = "<group>"; };
+		E12A9F511F15642000509D39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E12A9F531F15689B00509D39 /* Lyne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lyne.swift; sourceTree = "<group>"; };
 		E140C43D1F12E145000094A1 /* annotation1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation1.png; sourceTree = "<group>"; };
 		E140C43F1F12E52F000094A1 /* annotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation.png; sourceTree = "<group>"; };
 		E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyneTableViewCell.xib; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				E11AC0371F12D410003CAF69 /* AppDelegate.swift */,
+				E12A9F531F15689B00509D39 /* Lyne.swift */,
 				E11AC0651F12D459003CAF69 /* JoinViewController.swift */,
 				E11AC03B1F12D410003CAF69 /* Main.storyboard */,
 				E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */,
@@ -145,6 +150,7 @@
 				E12189AD1F1348EE007946F5 /* create.png */,
 				E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */,
 				E11AC0431F12D410003CAF69 /* Info.plist */,
+				E12A9F511F15642000509D39 /* GoogleService-Info.plist */,
 			);
 			path = Lyne;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */,
 				E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */,
 				E11AC03D1F12D410003CAF69 /* Main.storyboard in Resources */,
+				E12A9F521F15642000509D39 /* GoogleService-Info.plist in Resources */,
 				E12189AC1F1348CE007946F5 /* search.png in Resources */,
 				E140C4401F12E52F000094A1 /* annotation.png in Resources */,
 			);
@@ -471,6 +478,7 @@
 			files = (
 				E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */,
 				E11AC0381F12D410003CAF69 /* AppDelegate.swift in Sources */,
+				E12A9F541F15689B00509D39 /* Lyne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
