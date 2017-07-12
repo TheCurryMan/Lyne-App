@@ -30,7 +30,7 @@ class CreateViewController: UIViewController {
         
         ref = Database.database().reference()
         
-        let address = "1 Infinite Loop, Cupertino, CA 95014"
+        let address = lyneLocation.text!
         
         let geoCoder = CLGeocoder()
         geoCoder.geocodeAddressString(address) { (placemarks, error) in
@@ -44,15 +44,9 @@ class CreateViewController: UIViewController {
             
                 let data = ["lat":location.coordinate.latitude, "long":location.coordinate.longitude, "name":self.lyneName.text!, "num":0, "pos":1] as [String : Any]
                 self.ref.child("lynes").child("\(self.lyneID.text!)").setValue(data)
-                
             
+                self.performSegue(withIdentifier: "create", sender: self)
             }
-            
-            // Use your location
-        
-        
-        
-        
     }
 
     /*

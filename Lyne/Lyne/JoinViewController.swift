@@ -37,12 +37,7 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         locateMe()
-        let locations = [CLLocation(latitude: 37.309489, longitude: -122.003984), CLLocation(latitude: 37.309536, longitude: -122.004575)]
-        
         tableView.register( UINib(nibName: "LyneTableViewCell", bundle:nil), forCellReuseIdentifier: "join")
-        
-        
-        
         getFirebaseData()
     }
     
