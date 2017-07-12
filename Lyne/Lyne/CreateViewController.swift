@@ -1,0 +1,68 @@
+//
+//  CreateViewController.swift
+//  Lyne
+//
+//  Created by Avinash Jain on 7/11/17.
+//  Copyright © 2017 Avinash Jain. All rights reserved.
+//
+
+import UIKit
+import FirebaseDatabase
+import CoreLocation
+
+class CreateViewController: UIViewController {
+
+    var ref: DatabaseReference!
+    
+    @IBOutlet weak var lyneName: UITextField!
+    @IBOutlet weak var lyneID: UITextField!
+    @IBOutlet weak var lyneLocation: UITextField!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    @IBAction func createLyne(_ sender: Any) {
+        
+        ref = Database.database().reference()
+        
+        let address = "1 Infinite Loop, Cupertino, CA 95014"
+        
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString(address) { (placemarks, error) in
+            guard
+                let placemarks = placemarks,
+                let location = placemarks.first?.location
+                else {
+                    // handle no location found
+                    return
+            }
+            
+                let data = ["lat":location.coordinate.latitude, "long":location.coordinate.longitude, "name":self.lyneName.text!, "num":0, "pos":1] as [String : Any]
+                self.ref.child("lynes").child("\(self.lyneID.text!)").setValue(data)
+                
+            
+            }
+            
+            // Use your location
+        
+        
+        
+        
+    }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

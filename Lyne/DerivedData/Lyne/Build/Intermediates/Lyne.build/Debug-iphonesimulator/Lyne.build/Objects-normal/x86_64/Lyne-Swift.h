@@ -155,8 +155,25 @@ SWIFT_CLASS("_TtC4Lyne11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
+@class FIRDatabaseReference;
+@class UITextField;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC4Lyne20CreateViewController")
+@interface CreateViewController : UIViewController
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lyneName;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lyneID;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lyneLocation;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+- (IBAction)createLyne:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
 
 SWIFT_CLASS("_TtC4Lyne17JoinTableViewCell")
 @interface JoinTableViewCell : UITableViewCell
@@ -171,11 +188,9 @@ SWIFT_CLASS("_TtC4Lyne17JoinTableViewCell")
 @class MKMapView;
 @class UITableView;
 @class CLLocationManager;
-@class FIRDatabaseReference;
 @class CLLocation;
 @protocol MKAnnotation;
 @class MKAnnotationView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC4Lyne18JoinViewController")
 @interface JoinViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource>

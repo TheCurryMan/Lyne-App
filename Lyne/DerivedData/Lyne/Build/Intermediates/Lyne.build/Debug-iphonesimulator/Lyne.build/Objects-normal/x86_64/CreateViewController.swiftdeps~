@@ -1,0 +1,555 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CreateViewController"
+provides-nominal:
+- "C4Lyne20CreateViewController"
+provides-member:
+- ["C4Lyne20CreateViewController", ""]
+provides-dynamic-lookup:
+- "createLyne"
+- "lyneID"
+- "lyneLocation"
+- "lyneName"
+- "ref"
+- "viewDidDisappear"
+- "viewWillAppear"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "CLGeocoder"
+- !private "CastingPrecedence"
+- "CreateViewController"
+- !private "Database"
+- "DatabaseReference"
+- "Dictionary"
+- !private "String"
+- !private "StringLiteralType"
+- "UITextField"
+- "UIViewController"
+depends-member:
+- !private ["Ps9AnyObject", "CLGeocoder"]
+- !private ["Ps9AnyObject", "Database"]
+- !private ["Ps9AnyObject", "child"]
+- !private ["Ps9AnyObject", "coordinate"]
+- !private ["Ps9AnyObject", "database"]
+- !private ["Ps9AnyObject", "geocodeAddressString"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isNavigationBarHidden"]
+- !private ["Ps9AnyObject", "location"]
+- !private ["Ps9AnyObject", "lyneID"]
+- !private ["Ps9AnyObject", "lyneName"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "ref"]
+- !private ["Ps9AnyObject", "reference"]
+- !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "first"]
+- !private ["Ps23BidirectionalCollection", "first"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["CSo10CLGeocoder", "geocodeAddressString"]
+- !private ["CSo10CLGeocoder", "init"]
+- !private ["CSo10CLLocation", "coordinate"]
+- !private ["VSC22CLLocationCoordinate2D", "latitude"]
+- !private ["VSC22CLLocationCoordinate2D", "longitude"]
+- !private ["CSo11CLPlacemark", "location"]
+- !private ["Ps7CVarArg", "CLGeocoder"]
+- !private ["Ps7CVarArg", "Database"]
+- !private ["Ps7CVarArg", "child"]
+- !private ["Ps7CVarArg", "coordinate"]
+- !private ["Ps7CVarArg", "database"]
+- !private ["Ps7CVarArg", "first"]
+- !private ["Ps7CVarArg", "geocodeAddressString"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isNavigationBarHidden"]
+- !private ["Ps7CVarArg", "location"]
+- !private ["Ps7CVarArg", "lyneID"]
+- !private ["Ps7CVarArg", "lyneName"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "ref"]
+- !private ["Ps7CVarArg", "reference"]
+- !private ["Ps7CVarArg", "setValue"]
+- !private ["Ps7CVarArg", "text"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "first"]
+- !private ["Ps10Comparable", "init"]
+- ["C4Lyne20CreateViewController", "Bool"]
+- !private ["C4Lyne20CreateViewController", "CLGeocoder"]
+- !private ["C4Lyne20CreateViewController", "Database"]
+- ["C4Lyne20CreateViewController", "DatabaseReference"]
+- !private ["C4Lyne20CreateViewController", "String"]
+- ["C4Lyne20CreateViewController", "UITextField"]
+- ["C4Lyne20CreateViewController", "createLyne"]
+- ["C4Lyne20CreateViewController", "deinit"]
+- ["C4Lyne20CreateViewController", "init"]
+- ["C4Lyne20CreateViewController", "lyneID"]
+- ["C4Lyne20CreateViewController", "lyneLocation"]
+- ["C4Lyne20CreateViewController", "lyneName"]
+- !private ["C4Lyne20CreateViewController", "navigationController"]
+- ["C4Lyne20CreateViewController", "ref"]
+- ["C4Lyne20CreateViewController", "viewDidDisappear"]
+- ["C4Lyne20CreateViewController", "viewWillAppear"]
+- !private ["Ps28CustomDebugStringConvertible", "CLGeocoder"]
+- !private ["Ps28CustomDebugStringConvertible", "Database"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
+- !private ["Ps28CustomDebugStringConvertible", "coordinate"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- !private ["Ps28CustomDebugStringConvertible", "geocodeAddressString"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isNavigationBarHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "location"]
+- !private ["Ps28CustomDebugStringConvertible", "lyneID"]
+- !private ["Ps28CustomDebugStringConvertible", "lyneName"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "ref"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "first"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "CLGeocoder"]
+- !private ["Ps23CustomStringConvertible", "Database"]
+- !private ["Ps23CustomStringConvertible", "child"]
+- !private ["Ps23CustomStringConvertible", "coordinate"]
+- !private ["Ps23CustomStringConvertible", "database"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- !private ["Ps23CustomStringConvertible", "geocodeAddressString"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isNavigationBarHidden"]
+- !private ["Ps23CustomStringConvertible", "location"]
+- !private ["Ps23CustomStringConvertible", "lyneID"]
+- !private ["Ps23CustomStringConvertible", "lyneName"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "ref"]
+- !private ["Ps23CustomStringConvertible", "reference"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["CSo8Database", "database"]
+- !private ["CSo8Database", "reference"]
+- !private ["CSo13DatabaseQuery", "child"]
+- !private ["CSo13DatabaseQuery", "setValue"]
+- !private ["CSo17DatabaseReference", "child"]
+- !private ["CSo17DatabaseReference", "setValue"]
+- !private ["Ps9Equatable", "CLGeocoder"]
+- !private ["Ps9Equatable", "Database"]
+- !private ["Ps9Equatable", "child"]
+- !private ["Ps9Equatable", "coordinate"]
+- !private ["Ps9Equatable", "database"]
+- !private ["Ps9Equatable", "geocodeAddressString"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isNavigationBarHidden"]
+- !private ["Ps9Equatable", "location"]
+- !private ["Ps9Equatable", "lyneID"]
+- !private ["Ps9Equatable", "lyneName"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "ref"]
+- !private ["Ps9Equatable", "reference"]
+- !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "first"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "CLGeocoder"]
+- !private ["Ps8Hashable", "Database"]
+- !private ["Ps8Hashable", "child"]
+- !private ["Ps8Hashable", "coordinate"]
+- !private ["Ps8Hashable", "database"]
+- !private ["Ps8Hashable", "geocodeAddressString"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isNavigationBarHidden"]
+- !private ["Ps8Hashable", "location"]
+- !private ["Ps8Hashable", "lyneID"]
+- !private ["Ps8Hashable", "lyneName"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "ref"]
+- !private ["Ps8Hashable", "reference"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "first"]
+- !private ["PSo8NSCoding", "CLGeocoder"]
+- !private ["PSo8NSCoding", "Database"]
+- !private ["PSo8NSCoding", "coordinate"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isNavigationBarHidden"]
+- !private ["PSo8NSCoding", "location"]
+- !private ["PSo8NSCoding", "lyneID"]
+- !private ["PSo8NSCoding", "lyneName"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "ref"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "coordinate"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "location"]
+- !private ["PSo26NSExtensionRequestHandling", "CLGeocoder"]
+- !private ["PSo26NSExtensionRequestHandling", "Database"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "isNavigationBarHidden"]
+- !private ["PSo26NSExtensionRequestHandling", "lyneID"]
+- !private ["PSo26NSExtensionRequestHandling", "lyneName"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "ref"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CLGeocoder"]
+- !private ["CSo8NSObject", "Database"]
+- ["CSo8NSObject", "DatabaseReference"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "coordinate"]
+- ["CSo8NSObject", "createLyne"]
+- !private ["CSo8NSObject", "database"]
+- !private ["CSo8NSObject", "geocodeAddressString"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isNavigationBarHidden"]
+- !private ["CSo8NSObject", "location"]
+- ["CSo8NSObject", "lyneID"]
+- ["CSo8NSObject", "lyneLocation"]
+- ["CSo8NSObject", "lyneName"]
+- !private ["CSo8NSObject", "navigationController"]
+- ["CSo8NSObject", "ref"]
+- !private ["CSo8NSObject", "reference"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidDisappear"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "CLGeocoder"]
+- !private ["PSo16NSObjectProtocol", "Database"]
+- !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "coordinate"]
+- !private ["PSo16NSObjectProtocol", "database"]
+- !private ["PSo16NSObjectProtocol", "geocodeAddressString"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isNavigationBarHidden"]
+- !private ["PSo16NSObjectProtocol", "location"]
+- !private ["PSo16NSObjectProtocol", "lyneID"]
+- !private ["PSo16NSObjectProtocol", "lyneName"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "ref"]
+- !private ["PSo16NSObjectProtocol", "reference"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "coordinate"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "location"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "first"]
+- !private ["Ps26RangeReplaceableCollection", "first"]
+- !private ["Ps8Sequence", "first"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "CLGeocoder"]
+- !private ["PSo21UIAppearanceContainer", "Database"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isNavigationBarHidden"]
+- !private ["PSo21UIAppearanceContainer", "lyneID"]
+- !private ["PSo21UIAppearanceContainer", "lyneName"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "ref"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "CLGeocoder"]
+- !private ["PSo18UIContentContainer", "Database"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "isNavigationBarHidden"]
+- !private ["PSo18UIContentContainer", "lyneID"]
+- !private ["PSo18UIContentContainer", "lyneName"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "ref"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "CLGeocoder"]
+- !private ["PSo18UIFocusEnvironment", "Database"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isNavigationBarHidden"]
+- !private ["PSo18UIFocusEnvironment", "lyneID"]
+- !private ["PSo18UIFocusEnvironment", "lyneName"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "ref"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo22UINavigationController", "isNavigationBarHidden"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "CLGeocoder"]
+- !private ["CSo11UIResponder", "Database"]
+- ["CSo11UIResponder", "DatabaseReference"]
+- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "createLyne"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isNavigationBarHidden"]
+- ["CSo11UIResponder", "lyneID"]
+- ["CSo11UIResponder", "lyneLocation"]
+- ["CSo11UIResponder", "lyneName"]
+- !private ["CSo11UIResponder", "navigationController"]
+- ["CSo11UIResponder", "ref"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidDisappear"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "CLGeocoder"]
+- !private ["PSo30UIResponderStandardEditActions", "Database"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isNavigationBarHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "lyneID"]
+- !private ["PSo30UIResponderStandardEditActions", "lyneName"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "ref"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "CLGeocoder"]
+- !private ["PSo16UIStateRestoring", "Database"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "isNavigationBarHidden"]
+- !private ["PSo16UIStateRestoring", "lyneID"]
+- !private ["PSo16UIStateRestoring", "lyneName"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "ref"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "CLGeocoder"]
+- !private ["PSo18UITraitEnvironment", "Database"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isNavigationBarHidden"]
+- !private ["PSo18UITraitEnvironment", "lyneID"]
+- !private ["PSo18UITraitEnvironment", "lyneName"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "ref"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "CLGeocoder"]
+- !private ["CSo16UIViewController", "Database"]
+- ["CSo16UIViewController", "DatabaseReference"]
+- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "createLyne"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "isNavigationBarHidden"]
+- ["CSo16UIViewController", "lyneID"]
+- ["CSo16UIViewController", "lyneLocation"]
+- ["CSo16UIViewController", "lyneName"]
+- !private ["CSo16UIViewController", "navigationController"]
+- ["CSo16UIViewController", "ref"]
+- ["CSo16UIViewController", "viewDidDisappear"]
+- ["CSo16UIViewController", "viewWillAppear"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps14_ArrayProtocol", "first"]
+- !private ["Ps23_BidirectionalIndexable", "first"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "CLGeocoder"]
+- !private ["Ps9_Hashable", "Database"]
+- !private ["Ps9_Hashable", "child"]
+- !private ["Ps9_Hashable", "coordinate"]
+- !private ["Ps9_Hashable", "database"]
+- !private ["Ps9_Hashable", "geocodeAddressString"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isNavigationBarHidden"]
+- !private ["Ps9_Hashable", "location"]
+- !private ["Ps9_Hashable", "lyneID"]
+- !private ["Ps9_Hashable", "lyneName"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "ref"]
+- !private ["Ps9_Hashable", "reference"]
+- !private ["Ps9_Hashable", "setValue"]
+- !private ["Ps9_Hashable", "text"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "first"]
+- !private ["Ps14_IndexableBase", "first"]
+- !private ["Ps17_MutableIndexable", "first"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "latitude"]
+- !private ["Ps21_ObjectiveCBridgeable", "longitude"]
+- !private ["Ps22_RandomAccessIndexable", "first"]
+- !private ["Ps26_RangeReplaceableIndexable", "first"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "PSo15CALayerDelegate"
+- !private "CSo10CLGeocoder"
+- !private "CSo10CLLocation"
+- !private "VSC22CLLocationCoordinate2D"
+- !private "CSo11CLPlacemark"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "C4Lyne20CreateViewController"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "CSo8Database"
+- !private "CSo13DatabaseQuery"
+- !private "CSo17DatabaseReference"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps8Sequence"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo10UIKeyInput"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "42b62b97657807e110d4d9f31a467343"
