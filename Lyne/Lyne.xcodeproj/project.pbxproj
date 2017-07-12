@@ -24,12 +24,11 @@
 		E140C4401F12E52F000094A1 /* annotation.png in Resources */ = {isa = PBXBuildFile; fileRef = E140C43F1F12E52F000094A1 /* annotation.png */; };
 		E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */; };
 		E190E3CD1F16BA61004B4E44 /* ManageLyneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */; };
-		E190E3CF1F16BFD2004B4E44 /* settings-work-tool.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3CE1F16BFD2004B4E44 /* settings-work-tool.png */; };
-		E190E3D11F16C036004B4E44 /* settings-work-tool (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D01F16C036004B4E44 /* settings-work-tool (1).png */; };
+		E190E3D11F16C036004B4E44 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D01F16C036004B4E44 /* settings.png */; };
 		E190E3D31F16C83C004B4E44 /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D21F16C83C004B4E44 /* right-arrow.png */; };
 		E190E3D51F16CC42004B4E44 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D41F16CC42004B4E44 /* add.png */; };
 		E190E3D71F16CE2B004B4E44 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D61F16CE2B004B4E44 /* checkmark.png */; };
-		E190E3D91F16CE2E004B4E44 /* cross-symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D81F16CE2E004B4E44 /* cross-symbol.png */; };
+		E190E3DD1F16D6DB004B4E44 /* greencheck.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3DC1F16D6DB004B4E44 /* greencheck.png */; };
 		FEC3F7BD4049A46EAD038932 /* Pods_LyneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,12 +80,11 @@
 		E140C43F1F12E52F000094A1 /* annotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation.png; sourceTree = "<group>"; };
 		E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyneTableViewCell.xib; sourceTree = "<group>"; };
 		E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageLyneViewController.swift; sourceTree = "<group>"; };
-		E190E3CE1F16BFD2004B4E44 /* settings-work-tool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-work-tool.png"; sourceTree = "<group>"; };
-		E190E3D01F16C036004B4E44 /* settings-work-tool (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-work-tool (1).png"; sourceTree = "<group>"; };
+		E190E3D01F16C036004B4E44 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		E190E3D21F16C83C004B4E44 /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
 		E190E3D41F16CC42004B4E44 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		E190E3D61F16CE2B004B4E44 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
-		E190E3D81F16CE2E004B4E44 /* cross-symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross-symbol.png"; sourceTree = "<group>"; };
+		E190E3DC1F16D6DB004B4E44 /* greencheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greencheck.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,11 +162,10 @@
 				E140C43F1F12E52F000094A1 /* annotation.png */,
 				E12189AB1F1348CE007946F5 /* search.png */,
 				E12189AD1F1348EE007946F5 /* create.png */,
-				E190E3CE1F16BFD2004B4E44 /* settings-work-tool.png */,
-				E190E3D01F16C036004B4E44 /* settings-work-tool (1).png */,
+				E190E3D01F16C036004B4E44 /* settings.png */,
 				E190E3D21F16C83C004B4E44 /* right-arrow.png */,
 				E190E3D61F16CE2B004B4E44 /* checkmark.png */,
-				E190E3D81F16CE2E004B4E44 /* cross-symbol.png */,
+				E190E3DC1F16D6DB004B4E44 /* greencheck.png */,
 				E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */,
 				E11AC0431F12D410003CAF69 /* Info.plist */,
 				E12A9F511F15642000509D39 /* GoogleService-Info.plist */,
@@ -328,16 +325,15 @@
 			files = (
 				E11AC0421F12D410003CAF69 /* LaunchScreen.storyboard in Resources */,
 				E12189AE1F1348EE007946F5 /* create.png in Resources */,
+				E190E3DD1F16D6DB004B4E44 /* greencheck.png in Resources */,
 				E190E3D31F16C83C004B4E44 /* right-arrow.png in Resources */,
 				E190E3D51F16CC42004B4E44 /* add.png in Resources */,
 				E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */,
-				E190E3D11F16C036004B4E44 /* settings-work-tool (1).png in Resources */,
+				E190E3D11F16C036004B4E44 /* settings.png in Resources */,
 				E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */,
 				E11AC03D1F12D410003CAF69 /* Main.storyboard in Resources */,
-				E190E3D91F16CE2E004B4E44 /* cross-symbol.png in Resources */,
 				E12A9F521F15642000509D39 /* GoogleService-Info.plist in Resources */,
 				E190E3D71F16CE2B004B4E44 /* checkmark.png in Resources */,
-				E190E3CF1F16BFD2004B4E44 /* settings-work-tool.png in Resources */,
 				E12189AC1F1348CE007946F5 /* search.png in Resources */,
 				E140C4401F12E52F000094A1 /* annotation.png in Resources */,
 			);

@@ -12,7 +12,8 @@ class ManageLyneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.isHidden = true
+        print(UserDefaults.standard.object(forKey: "id") as! String)
         // Do any additional setup after loading the view.
     }
 
@@ -22,12 +23,9 @@ class ManageLyneViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+        
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false
-    }
     
 
     /*

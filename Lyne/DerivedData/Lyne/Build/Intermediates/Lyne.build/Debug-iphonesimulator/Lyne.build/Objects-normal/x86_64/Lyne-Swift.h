@@ -220,7 +220,6 @@ SWIFT_CLASS("_TtC4Lyne24ManageLyneViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

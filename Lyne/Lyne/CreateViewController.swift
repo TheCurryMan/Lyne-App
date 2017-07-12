@@ -44,7 +44,8 @@ class CreateViewController: UIViewController {
             
                 let data = ["lat":location.coordinate.latitude, "long":location.coordinate.longitude, "name":self.lyneName.text!, "num":0, "pos":1] as [String : Any]
                 self.ref.child("lynes").child("\(self.lyneID.text!)").setValue(data)
-            
+                UserDefaults.standard.set(self.lyneID.text!, forKey: "id")
+                
                 self.performSegue(withIdentifier: "create", sender: self)
             }
     }

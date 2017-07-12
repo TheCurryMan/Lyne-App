@@ -16,17 +16,29 @@
 		<data>
 		2x/chjV94Kusc/lL42Qyss00InA=
 		</data>
+		<key>Base.lproj/Main.storyboardc/52b-4m-RMU-view-2Nb-4A-fgq.nib</key>
+		<data>
+		U1oZYsCvGBC2c7AVFfF80RBoYnI=
+		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		i5D9r13iNzYjh9QX/bb/rJdbtjI=
+		7kfFJ0IhvgD5Z5f1Co/oOofjrhQ=
+		</data>
+		<key>Base.lproj/Main.storyboardc/Kkr-Cc-LJu-view-LG5-W6-njN.nib</key>
+		<data>
+		LAey9P1xOVZeKgKPYt0P/ZJWzx4=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UITabBarController-Nkk-c1-3rF.nib</key>
+		<data>
+		IBgbaZRew6YBsPvinYY5tjZIWGI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-c3G-sI-9aT.nib</key>
 		<data>
-		Xxz8CKrIokRgriB/cXCjgLJoDng=
+		wWAu3cjT/uYBgv44GaWPgXHd7Q8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/c3G-sI-9aT-view-tvh-9a-C6S.nib</key>
 		<data>
-		4jfR+cr9bYWduRVZ+/hKxi6yDzQ=
+		dsXR1qDWgNAzPioTQRs8zj415Vk=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
@@ -132,9 +144,9 @@
 		<data>
 		WSDXE4GDFm2SN3TrmU/RQVKhVOo=
 		</data>
-		<key>cross-symbol.png</key>
+		<key>greencheck.png</key>
 		<data>
-		edtAmUmrg0FStHhbNBm2OCUIt2w=
+		rmBW2uMK+sqMhNQdqJqfcwT6OoA=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -148,13 +160,9 @@
 		<data>
 		moNkEVCn3CMpSMwd3BRRvnpQ604=
 		</data>
-		<key>settings-work-tool (1).png</key>
+		<key>settings.png</key>
 		<data>
 		NXn7Oh+t6yyKVf6VyqloOrWZ4kI=
-		</data>
-		<key>settings-work-tool.png</key>
-		<data>
-		KE49+sO9x4C3/ug5Qy4Gj5CXznc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -192,37 +200,70 @@
 			JE+ix1ltHiDZl+ATsP+XlGxbdrXi1CpXewjBLwyBdZk=
 			</data>
 		</dict>
+		<key>Base.lproj/Main.storyboardc/52b-4m-RMU-view-2Nb-4A-fgq.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U1oZYsCvGBC2c7AVFfF80RBoYnI=
+			</data>
+			<key>hash2</key>
+			<data>
+			G07PY+06BlJlJUkJkkFfMrW9Rd5M1TO7UIr9zL9v8tQ=
+			</data>
+		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i5D9r13iNzYjh9QX/bb/rJdbtjI=
+			7kfFJ0IhvgD5Z5f1Co/oOofjrhQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			GCx11oird9lxmU0NAVXqElP+4OrajQ2+XPvj0Mn4jWo=
+			y+ikXuefr5TjoR7cygls43ig1OAfFNdtusNHN+6fvVo=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/Kkr-Cc-LJu-view-LG5-W6-njN.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LAey9P1xOVZeKgKPYt0P/ZJWzx4=
+			</data>
+			<key>hash2</key>
+			<data>
+			I7rxEM3EX9XAkaIeXuLLqWoMuYvuqH3PSnEj8DDgk/4=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UITabBarController-Nkk-c1-3rF.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IBgbaZRew6YBsPvinYY5tjZIWGI=
+			</data>
+			<key>hash2</key>
+			<data>
+			5Bzntkf4/wCxn7ZlESQKHNodm5FX/mVDN71uKmWIGfg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-c3G-sI-9aT.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xxz8CKrIokRgriB/cXCjgLJoDng=
+			wWAu3cjT/uYBgv44GaWPgXHd7Q8=
 			</data>
 			<key>hash2</key>
 			<data>
-			YTQuJx57yQdDD4/ePpkcu3X09kWbCaf182/Af7B4S7E=
+			L32dz0mqQf/V3RJwV1d1kKXSVC/e4psjzko56D8CxKQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/c3G-sI-9aT-view-tvh-9a-C6S.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4jfR+cr9bYWduRVZ+/hKxi6yDzQ=
+			dsXR1qDWgNAzPioTQRs8zj415Vk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6RHs4oIGXKOd4mp8MbtDIbn5f4LukfGZpuRWSHYPuD4=
+			DgUnD1qxbwLXc5JRkt/EQsENrxpxv0aUJS6QsRUkmjA=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
@@ -489,15 +530,15 @@
 			3mFruzyerK5ZS7KVjdwqwK6n/CEqujCzMR6/nR7hZYY=
 			</data>
 		</dict>
-		<key>cross-symbol.png</key>
+		<key>greencheck.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			edtAmUmrg0FStHhbNBm2OCUIt2w=
+			rmBW2uMK+sqMhNQdqJqfcwT6OoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			O5qhNz/wt24673KKIsO2RI/VRmMl10sAtRuByt7EQAs=
+			pvxTmqB+jp3d9JqulaHmeb9CBYoOkWdm5XZuRw2NwNA=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
@@ -533,7 +574,7 @@
 			740uFa29NvjKfBjG6I4dGLJsaL+gtIR44QBhAtP19ig=
 			</data>
 		</dict>
-		<key>settings-work-tool (1).png</key>
+		<key>settings.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -542,17 +583,6 @@
 			<key>hash2</key>
 			<data>
 			2V8+f2qtgRX6sjWJFG+VT1qJGUFGeLuo7C+FHOumk/k=
-			</data>
-		</dict>
-		<key>settings-work-tool.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KE49+sO9x4C3/ug5Qy4Gj5CXznc=
-			</data>
-			<key>hash2</key>
-			<data>
-			YWifkqxF5lp25+m51lTXSIW2drEg6i1PPILxnP6wGXc=
 			</data>
 		</dict>
 	</dict>
