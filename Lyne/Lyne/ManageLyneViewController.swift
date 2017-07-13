@@ -7,35 +7,66 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ManageLyneViewController: UIViewController {
+    
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var lyneName: UILabel!
+    @IBOutlet weak var lynePosition: UILabel!
+    @IBOutlet weak var lyneCurrentUserName: UILabel!
+    @IBOutlet weak var lyneNumberOfPeople: UILabel!
+    
+    @IBOutlet weak var checkmarkButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        print(UserDefaults.standard.object(forKey: "id") as! String)
-        // Do any additional setup after loading the view.
+        
+        updateView()
+        getData()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
-    override func viewWillAppear(_ animated: Bool) {
+    func updateView() {
+        self.lyneName.text = User.currentUser.lyneCreated!.name!
+        self.lynePosition.text = "#\(String(describing: User.currentUser.lyneCreated!.pos!))"
+        self.lyneNumberOfPeople.text = "\(String(describing: User.currentUser.lyneCreated!.num!)) People in Lyne"
+    }
+    
+    func getData() {
+        let ref : DatabaseReference! = Database.database().reference()
+        
+        _ = ref.child("lynes").child(User.currentUser.lyneCreated!.id!).observe(DataEventType.value, with: { (snapshot) in
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            User.currentUser.lyneCreated?.updateValues(dict: postDict)
+            self.updateView()
+        })
+    }
+    
+    
+    @IBAction func personShowedUp(_ sender: Any) {
+        
+        print(User.currentUser.lyneCreated!.num!)
+        checkmarkButton.setImage(UIImage(named: "greencheck.png"), for: UIControlState.normal)
+    }
+
+    @IBAction func nextPerson(_ sender: Any) {
+        
         
     }
-    
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func addPerson(_ sender: Any) {
+        
+        
     }
-    */
-
+  
+    
 }

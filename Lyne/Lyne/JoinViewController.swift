@@ -54,7 +54,7 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             for lyne in postDict {
                 let pair = lyne.value as! [String:AnyObject]
                 let coords = CLLocationCoordinate2DMake(pair["lat"] as! CLLocationDegrees, pair["long"] as! CLLocationDegrees)
-                let newLyne = Lyne(name: pair["name"] as! String, num: pair["num"] as! Int, pos: pair["pos"] as! Int, loc: coords)
+                let newLyne = Lyne(name: pair["name"] as? String, num: pair["num"] as? Int, pos: pair["pos"] as? Int, loc: coords, id: lyne.key)
                 self.lynes.append(newLyne)
             }
             
@@ -89,8 +89,8 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     func addAnnotations(){
         for lyne in lynes{
             
-            let CLLCoordType = CLLocationCoordinate2D(latitude: lyne.loc.latitude,
-                                                      longitude: lyne.loc.longitude)
+            let CLLCoordType = CLLocationCoordinate2D(latitude: lyne.loc!.latitude,
+                                                      longitude: lyne.loc!.longitude)
             let anno = MKPointAnnotation()
             anno.coordinate = CLLCoordType
             
@@ -125,10 +125,10 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         let cell : JoinTableViewCell = tableView.dequeueReusableCell(withIdentifier: "join") as! JoinTableViewCell
         
         let currentLyne = lynes[indexPath.row]
-        cell.lyneDistanceLabel.text = String(format: "%.2f", getDistanceFromCurrentLocation(otherLoc: currentLyne.loc)) + "m"
+        cell.lyneDistanceLabel.text = String(format: "%.2f", getDistanceFromCurrentLocation(otherLoc: currentLyne.loc!)) + "m"
         cell.lyneNameLabel.text = currentLyne.name
-        cell.lynePeopleLabel.text = "There are \(currentLyne.num) people in the lyne"
-        cell.lynePositionLabel.text = "#\(currentLyne.pos)"
+        cell.lynePeopleLabel.text = "There are \(currentLyne.num!) people in the lyne"
+        cell.lynePositionLabel.text = "#\(currentLyne.pos!)"
         
         return cell
     }

@@ -29,6 +29,7 @@
 		E190E3D51F16CC42004B4E44 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D41F16CC42004B4E44 /* add.png */; };
 		E190E3D71F16CE2B004B4E44 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D61F16CE2B004B4E44 /* checkmark.png */; };
 		E190E3DD1F16D6DB004B4E44 /* greencheck.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3DC1F16D6DB004B4E44 /* greencheck.png */; };
+		E190E3DF1F16ED83004B4E44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190E3DE1F16ED83004B4E44 /* User.swift */; };
 		FEC3F7BD4049A46EAD038932 /* Pods_LyneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		E190E3D41F16CC42004B4E44 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		E190E3D61F16CE2B004B4E44 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		E190E3DC1F16D6DB004B4E44 /* greencheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greencheck.png; sourceTree = "<group>"; };
+		E190E3DE1F16ED83004B4E44 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				E11AC0371F12D410003CAF69 /* AppDelegate.swift */,
 				E12A9F531F15689B00509D39 /* Lyne.swift */,
+				E190E3DE1F16ED83004B4E44 /* User.swift */,
 				E11AC0651F12D459003CAF69 /* JoinViewController.swift */,
 				E12A9F551F15AEFC00509D39 /* CreateViewController.swift */,
 				E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */,
@@ -500,6 +503,7 @@
 			files = (
 				E190E3CD1F16BA61004B4E44 /* ManageLyneViewController.swift in Sources */,
 				E12A9F561F15AEFC00509D39 /* CreateViewController.swift in Sources */,
+				E190E3DF1F16ED83004B4E44 /* User.swift in Sources */,
 				E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */,
 				E11AC0381F12D410003CAF69 /* AppDelegate.swift in Sources */,
 				E12A9F541F15689B00509D39 /* Lyne.swift in Sources */,

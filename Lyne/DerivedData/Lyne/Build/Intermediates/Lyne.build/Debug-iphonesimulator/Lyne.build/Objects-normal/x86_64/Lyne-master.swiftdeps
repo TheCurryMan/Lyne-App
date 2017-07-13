@@ -1,9 +1,10 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "1354072c9f3a0292634e158dd8f99d1d"
-build_time: [553218603, 739519000]
+build_time: [553223012, 481317000]
 inputs:
-  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/ManageLyneViewController.swift": [553218599, 0]
-  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/CreateViewController.swift": [553217529, 0]
-  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/JoinViewController.swift": [553211359, 0]
-  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/AppDelegate.swift": [553118132, 0]
-  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/Lyne.swift": [553119817, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/ManageLyneViewController.swift": [553223012, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/CreateViewController.swift": [553220331, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/User.swift": [553222868, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/JoinViewController.swift": [553220321, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/AppDelegate.swift": [553219728, 0]
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Lyne/Lyne.swift": [553222933, 0]

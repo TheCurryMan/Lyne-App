@@ -30,7 +30,6 @@ depends-top-level:
 - !private "+"
 - !private "??"
 - !private "AnyObject"
-- !private "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CLLocation"

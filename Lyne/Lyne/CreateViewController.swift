@@ -10,6 +10,7 @@ import UIKit
 import FirebaseDatabase
 import CoreLocation
 
+
 class CreateViewController: UIViewController {
 
     var ref: DatabaseReference!
@@ -28,7 +29,7 @@ class CreateViewController: UIViewController {
     
     @IBAction func createLyne(_ sender: Any) {
         
-        ref = Database.database().reference()
+        
         
         let address = lyneLocation.text!
         
@@ -42,10 +43,10 @@ class CreateViewController: UIViewController {
                     return
             }
             
-                let data = ["lat":location.coordinate.latitude, "long":location.coordinate.longitude, "name":self.lyneName.text!, "num":0, "pos":1] as [String : Any]
-                self.ref.child("lynes").child("\(self.lyneID.text!)").setValue(data)
-                UserDefaults.standard.set(self.lyneID.text!, forKey: "id")
-                
+            let lyne = Lyne(name: self.lyneName.text!, num: 0, pos: 1, loc: CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), id: self.lyneID.text!)
+            
+                User.currentUser.createLyne(lyne: lyne)
+            
                 self.performSegue(withIdentifier: "create", sender: self)
             }
     }

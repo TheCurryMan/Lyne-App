@@ -153,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#63" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIc-pA-pyL">
-                                <rect key="frame" x="16" y="227" width="343" height="130"/>
+                                <rect key="frame" x="16" y="255" width="343" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="160-TJ-o0O"/>
                                     <constraint firstAttribute="height" constant="130" id="Pd6-Rj-TW4"/>
@@ -162,49 +162,6 @@
                                 <color key="textColor" red="0.22745098039215686" green="0.60392156862745094" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olg-dP-Uzl">
-                                <rect key="frame" x="16" y="186" width="343" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="HSf-OQ-y3W"/>
-                                    <constraint firstAttribute="width" constant="343" id="ufq-hw-m0W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Now Serving">
-                                    <color key="titleColor" red="0.41960784313725491" green="0.74117647058823533" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOh-jh-zRV">
-                                <rect key="frame" x="16" y="503" width="343" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="GIM-HX-e5Q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="10 people in lyne">
-                                    <color key="titleColor" red="0.22663864489999999" green="0.60302740340000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRA-Ti-5Hj">
-                                <rect key="frame" x="16" y="373" width="343" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="hck-PQ-DVX"/>
-                                    <constraint firstAttribute="height" constant="38" id="nfL-C2-an3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                <state key="normal" title="&quot;Avinash&quot;">
-                                    <color key="titleColor" red="0.22663864489999999" green="0.60302740340000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-yr-7Il">
-                                <rect key="frame" x="16" y="28" width="145" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="CkK-Lb-9j7"/>
-                                    <constraint firstAttribute="height" constant="58" id="fGg-yl-WLI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
-                                <state key="normal" title="00:20">
-                                    <color key="titleColor" red="0.75294117647058822" green="0.75294117647058822" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvG-uj-5lC">
                                 <rect key="frame" x="314" y="35" width="45" height="45"/>
                                 <constraints>
@@ -214,12 +171,15 @@
                                 <state key="normal" image="settings.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byp-eZ-qdL">
-                                <rect key="frame" x="163" y="419" width="50" height="50"/>
+                                <rect key="frame" x="163" y="447" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="G0j-oe-gXu"/>
                                     <constraint firstAttribute="width" constant="50" id="RGv-cp-oGz"/>
                                 </constraints>
                                 <state key="normal" image="checkmark.png"/>
+                                <connections>
+                                    <action selector="personShowedUp:" destination="c3G-sI-9aT" eventType="touchUpInside" id="uKi-cx-vQc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAW-WJ-1TE">
                                 <rect key="frame" x="329" y="611" width="30" height="30"/>
@@ -228,6 +188,9 @@
                                     <constraint firstAttribute="height" constant="30" id="u3U-aO-320"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="right-arrow.png"/>
+                                <connections>
+                                    <action selector="nextPerson:" destination="c3G-sI-9aT" eventType="touchUpInside" id="LFC-wr-M4A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5s-tn-P0e">
                                 <rect key="frame" x="249" y="605" width="82" height="42"/>
@@ -238,6 +201,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextPerson:" destination="c3G-sI-9aT" eventType="touchUpInside" id="IBb-L9-1hR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmm-kT-MQg">
                                 <rect key="frame" x="16" y="611" width="30" height="30"/>
@@ -246,6 +212,9 @@
                                     <constraint firstAttribute="width" constant="30" id="epq-dQ-6fc"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="add.png"/>
+                                <connections>
+                                    <action selector="addPerson:" destination="c3G-sI-9aT" eventType="touchUpInside" id="myP-tb-UqF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmR-lH-eZt">
                                 <rect key="frame" x="46" y="605" width="69" height="42"/>
@@ -256,40 +225,103 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPerson:" destination="c3G-sI-9aT" eventType="touchUpInside" id="nDb-oc-sks"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Avinash&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWT-bT-sFk">
+                                <rect key="frame" x="16" y="377" width="343" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="ifr-kd-3bn"/>
+                                    <constraint firstAttribute="height" constant="32" id="qoV-mS-M7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="0.22663864489999999" green="0.60302740340000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Serving" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuR-OD-OJe">
+                                <rect key="frame" x="16" y="223" width="343" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="bOT-PI-BAk"/>
+                                    <constraint firstAttribute="height" constant="32" id="ftJ-57-YTl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.42101126909999997" green="0.74160355330000005" blue="0.99996477370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 People in Lyne" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9au-Ic-BxL">
+                                <rect key="frame" x="16" y="565" width="343" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="5Nr-ca-R2G"/>
+                                    <constraint firstAttribute="width" constant="343" id="tcc-Oh-W4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.42101126909999997" green="0.74160355330000005" blue="0.99996477370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lynbrook Web Dev Lyne " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1s-qq-Ehm">
+                                <rect key="frame" x="16" y="108" width="343" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Em1-rk-6LT"/>
+                                    <constraint firstAttribute="width" constant="343" id="q0P-YJ-yfm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="29"/>
+                                <color key="textColor" red="0.42101126909999997" green="0.74160355330000005" blue="0.99996477370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a15-kM-uab">
+                                <rect key="frame" x="16" y="22" width="156" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="IlL-YE-ymZ"/>
+                                    <constraint firstAttribute="height" constant="70" id="uAF-Se-FS7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <color key="textColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KmR-lH-eZt" firstAttribute="leading" secondItem="Qmm-kT-MQg" secondAttribute="trailing" id="0eC-QX-YPP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9au-Ic-BxL" secondAttribute="leading" id="1jC-dj-K5f"/>
                             <constraint firstAttribute="bottom" secondItem="KmR-lH-eZt" secondAttribute="bottom" constant="20" symbolic="YES" id="5HR-8o-kC8"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Qmm-kT-MQg" secondAttribute="bottom" constant="26" id="5Sz-tQ-Eve"/>
                             <constraint firstAttribute="bottomMargin" secondItem="jAW-WJ-1TE" secondAttribute="bottom" constant="26" id="5Tv-vn-d4h"/>
-                            <constraint firstItem="CRA-Ti-5Hj" firstAttribute="centerX" secondItem="tvh-9a-C6S" secondAttribute="centerX" id="7r6-ma-9VG"/>
-                            <constraint firstItem="byp-eZ-qdL" firstAttribute="top" secondItem="CRA-Ti-5Hj" secondAttribute="bottom" constant="8" id="CmO-wJ-RnO"/>
+                            <constraint firstItem="NIc-pA-pyL" firstAttribute="top" secondItem="XuR-OD-OJe" secondAttribute="bottom" id="BRh-r0-iaZ"/>
+                            <constraint firstItem="XuR-OD-OJe" firstAttribute="top" secondItem="t1s-qq-Ehm" secondAttribute="bottom" constant="30" id="DBe-xQ-R1A"/>
                             <constraint firstItem="NIc-pA-pyL" firstAttribute="centerX" secondItem="tvh-9a-C6S" secondAttribute="centerX" id="IwA-Va-qOC"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ccc-yr-7Il" secondAttribute="leading" id="KXb-pU-26g"/>
                             <constraint firstItem="yvG-uj-5lC" firstAttribute="top" secondItem="tvh-9a-C6S" secondAttribute="top" constant="35" id="S09-IN-YCi"/>
-                            <constraint firstItem="CRA-Ti-5Hj" firstAttribute="top" secondItem="NIc-pA-pyL" secondAttribute="bottom" constant="16" id="X2A-d3-uSN"/>
+                            <constraint firstItem="iWT-bT-sFk" firstAttribute="centerX" secondItem="tvh-9a-C6S" secondAttribute="centerX" id="UxD-da-v2x"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="a15-kM-uab" secondAttribute="leading" id="W7A-U2-MTz"/>
+                            <constraint firstItem="byp-eZ-qdL" firstAttribute="top" secondItem="iWT-bT-sFk" secondAttribute="bottom" constant="38" id="Xa3-Fv-6de"/>
+                            <constraint firstItem="iWT-bT-sFk" firstAttribute="top" secondItem="NIc-pA-pyL" secondAttribute="bottom" constant="-8" id="XxS-Xm-9ML"/>
                             <constraint firstItem="KmR-lH-eZt" firstAttribute="baseline" secondItem="g5s-tn-P0e" secondAttribute="baseline" id="YFT-AK-zhY"/>
-                            <constraint firstItem="JOh-jh-zRV" firstAttribute="centerX" secondItem="tvh-9a-C6S" secondAttribute="centerX" id="Yzi-7i-pSj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g5s-tn-P0e" secondAttribute="trailing" constant="28" id="cXO-5d-NaT"/>
-                            <constraint firstItem="ccc-yr-7Il" firstAttribute="top" secondItem="tvh-9a-C6S" secondAttribute="topMargin" constant="28" id="f74-Xm-11C"/>
-                            <constraint firstItem="NIc-pA-pyL" firstAttribute="top" secondItem="olg-dP-Uzl" secondAttribute="bottom" constant="8" id="iCM-FG-s4X"/>
-                            <constraint firstItem="olg-dP-Uzl" firstAttribute="centerX" secondItem="tvh-9a-C6S" secondAttribute="centerX" id="oq9-01-hbT"/>
-                            <constraint firstItem="KmR-lH-eZt" firstAttribute="top" secondItem="JOh-jh-zRV" secondAttribute="bottom" constant="64" id="sBj-tb-F41"/>
+                            <constraint firstItem="t1s-qq-Ehm" firstAttribute="top" secondItem="a15-kM-uab" secondAttribute="bottom" constant="16" id="eh9-M5-ImQ"/>
+                            <constraint firstItem="9au-Ic-BxL" firstAttribute="top" secondItem="byp-eZ-qdL" secondAttribute="bottom" constant="68" id="g17-bE-BXe"/>
                             <constraint firstItem="jAW-WJ-1TE" firstAttribute="leading" secondItem="g5s-tn-P0e" secondAttribute="trailing" constant="-2" id="sO7-86-inw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="t1s-qq-Ehm" secondAttribute="leading" id="vec-7c-Yc2"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Qmm-kT-MQg" secondAttribute="leading" id="vgj-wT-1ja"/>
+                            <constraint firstItem="a15-kM-uab" firstAttribute="top" secondItem="6fy-ss-jFe" secondAttribute="bottom" constant="2" id="wSA-vO-TG1"/>
+                            <constraint firstItem="XuR-OD-OJe" firstAttribute="centerX" secondItem="tvh-9a-C6S" secondAttribute="centerX" id="ws2-3R-TmM"/>
                             <constraint firstItem="byp-eZ-qdL" firstAttribute="centerX" secondItem="tvh-9a-C6S" secondAttribute="centerX" id="x0Q-Sv-ot4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yvG-uj-5lC" secondAttribute="trailing" id="x6a-7A-w19"/>
-                            <constraint firstItem="olg-dP-Uzl" firstAttribute="top" secondItem="ccc-yr-7Il" secondAttribute="bottom" constant="100" id="zud-ae-VRH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YjV-mi-HRP"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="checkmarkButton" destination="byp-eZ-qdL" id="EGl-qa-aXn"/>
+                        <outlet property="lyneCurrentUserName" destination="iWT-bT-sFk" id="cea-a6-oci"/>
+                        <outlet property="lyneName" destination="t1s-qq-Ehm" id="SkR-Bb-jaR"/>
+                        <outlet property="lyneNumberOfPeople" destination="9au-Ic-BxL" id="AVS-Qj-t43"/>
+                        <outlet property="lynePosition" destination="NIc-pA-pyL" id="c75-ZX-yB6"/>
+                        <outlet property="timerLabel" destination="a15-kM-uab" id="RJX-xQ-OyV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7P-Pj-1HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="6"/>
+            <point key="canvasLocation" x="1544.8" y="5.8470764617691158"/>
         </scene>
         <!--Join-->
         <scene sceneID="ziF-gv-0FC">
