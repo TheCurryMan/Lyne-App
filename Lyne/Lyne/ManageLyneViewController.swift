@@ -39,6 +39,7 @@ class ManageLyneViewController: UIViewController {
         self.lyneName.text = User.currentUser.lyneCreated!.name!
         self.lynePosition.text = "#\(String(describing: User.currentUser.lyneCreated!.pos!))"
         self.lyneNumberOfPeople.text = "\(String(describing: User.currentUser.lyneCreated!.num!)) People in Lyne"
+        self.lyneCurrentUserName.text = ""
     }
     
     func getData() {
