@@ -19,8 +19,11 @@ class ManageLyneViewController: UIViewController {
     @IBOutlet weak var lyneNumberOfPeople: UILabel!
     @IBOutlet weak var checkmarkButton: UIButton!
     
-    var ref : DatabaseReference!
+    var checkPressed = false
+    var timerCounter = 20
+    weak var timer : Timer?
     
+    var ref : DatabaseReference!
     var cu = User.currentUser
 
     override func viewDidLoad() {
@@ -47,15 +50,22 @@ class ManageLyneViewController: UIViewController {
             self.lyneCurrentUserName.isHidden = true
         } else {
         
+            if !checkPressed && timer == nil {
+                timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
+                timerLabel.textColor = UIColor.green
+            }
             
-        self.checkmarkButton.isHidden = false
-        self.lyneCurrentUserName.isHidden = false
-            
-        self.lyneName.text = cu.lyneCreated!.name!
+            self.checkmarkButton.isHidden = false
+            self.lyneCurrentUserName.isHidden = false
+                
+            self.lyneName.text = cu.lyneCreated!.name!
+            self.lyneCurrentUserName.text = cu.lyneCreated!.users![1]
+        }
         self.lynePosition.text = "#\(String(describing: cu.lyneCreated!.pos!))"
-        self.lyneNumberOfPeople.text = "\(String(describing: cu.lyneCreated!.num!)) People in Lyne"
-        self.lyneCurrentUserName.text = cu.lyneCreated!.users![1]
-            
+        if (cu.lyneCreated?.num)! == 1 {
+            self.lyneNumberOfPeople.text = "\(String(describing: cu.lyneCreated!.num!)) Person in Lyne"
+        } else {
+            self.lyneNumberOfPeople.text = "\(String(describing: cu.lyneCreated!.num!)) People in Lyne"
         }
     }
     
@@ -72,8 +82,12 @@ class ManageLyneViewController: UIViewController {
     
     @IBAction func personShowedUp(_ sender: Any) {
         
-        print(cu.lyneCreated!.num!)
+        checkPressed = true
         checkmarkButton.setImage(UIImage(named: "greencheck.png"), for: UIControlState.normal)
+        timer?.invalidate()
+        timerCounter = 20
+        timerLabel.text = "00:\(timerCounter)"
+        timerLabel.textColor = UIColor.lightGray
     }
 
     @IBAction func nextPerson(_ sender: Any) {
@@ -81,6 +95,10 @@ class ManageLyneViewController: UIViewController {
         cu.lyneCreated?.users?.remove(at: 1)
         cu.lyneCreated?.num! -= 1
         cu.lyneCreated?.pos! += 1
+        
+        self.checkPressed = false
+        checkmarkButton.setImage(UIImage(named: "checkmark.png"), for: UIControlState.normal)
+        
         
         ref.child("lynes").child(cu.lyneCreated!.id!).updateChildValues(["pos":(cu.lyneCreated?.pos)!, "num": (cu.lyneCreated?.num)!, "users":(cu.lyneCreated?.users)!])
         
@@ -90,6 +108,12 @@ class ManageLyneViewController: UIViewController {
     @IBAction func addPerson(_ sender: Any) {
         
         
+    }
+    
+    func updateTimer() {
+        timerCounter -= 1
+        
+        timerLabel.text = "00:\(timerCounter)"
     }
   
     

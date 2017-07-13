@@ -215,6 +215,7 @@ SWIFT_CLASS("_TtC4Lyne18JoinViewController")
 @end
 
 @class UIButton;
+@class NSTimer;
 
 SWIFT_CLASS("_TtC4Lyne24ManageLyneViewController")
 @interface ManageLyneViewController : UIViewController
@@ -224,6 +225,9 @@ SWIFT_CLASS("_TtC4Lyne24ManageLyneViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneCurrentUserName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneNumberOfPeople;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified checkmarkButton;
+@property (nonatomic) BOOL checkPressed;
+@property (nonatomic) NSInteger timerCounter;
+@property (nonatomic, weak) NSTimer * _Nullable timer;
 @property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -232,6 +236,7 @@ SWIFT_CLASS("_TtC4Lyne24ManageLyneViewController")
 - (IBAction)personShowedUp:(id _Nonnull)sender;
 - (IBAction)nextPerson:(id _Nonnull)sender;
 - (IBAction)addPerson:(id _Nonnull)sender;
+- (void)updateTimer;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
