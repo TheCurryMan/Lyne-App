@@ -26,7 +26,7 @@
                                 <rect key="frame" x="45" y="237" width="285" height="2"/>
                                 <color key="backgroundColor" red="0.2162210792" green="0.66429197790000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Lyne ID" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-6s-eb2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a" placeholder="Lyne ID" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-6s-eb2">
                                 <rect key="frame" x="45" y="269" width="267" height="30"/>
                                 <color key="tintColor" red="0.2162210792" green="0.66429197790000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -36,7 +36,7 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bnn-Us-2UR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a" placeholder="Location" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bnn-Us-2UR">
                                 <rect key="frame" x="45" y="338" width="267" height="30"/>
                                 <color key="tintColor" red="0.2162210792" green="0.66429197790000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -54,7 +54,7 @@
                                 <rect key="frame" x="45" y="375" width="285" height="2"/>
                                 <color key="backgroundColor" red="0.2162210792" green="0.66429197790000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="JLi-zE-LAv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a" placeholder="Name" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="JLi-zE-LAv">
                                 <rect key="frame" x="45" y="199" width="267" height="30"/>
                                 <color key="tintColor" red="0.2162210792" green="0.66429197790000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -321,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7P-Pj-1HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544.8" y="5.8470764617691158"/>
+            <point key="canvasLocation" x="1684" y="6"/>
         </scene>
         <!--Join-->
         <scene sceneID="ziF-gv-0FC">

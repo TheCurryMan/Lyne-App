@@ -224,11 +224,14 @@ SWIFT_CLASS("_TtC4Lyne24ManageLyneViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneCurrentUserName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneNumberOfPeople;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified checkmarkButton;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)updateView;
 - (void)getData;
 - (IBAction)personShowedUp:(id _Nonnull)sender;
+- (IBAction)nextPerson:(id _Nonnull)sender;
+- (IBAction)addPerson:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
