@@ -10,6 +10,7 @@ target 'Lyne' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'SCLAlertView'
 
 
   target 'LyneTests' do

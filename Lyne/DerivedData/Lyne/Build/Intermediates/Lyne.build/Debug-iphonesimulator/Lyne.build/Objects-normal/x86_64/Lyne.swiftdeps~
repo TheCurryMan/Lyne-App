@@ -47,6 +47,7 @@ depends-member:
 - ["V4Lyne4Lyne", "num"]
 - ["V4Lyne4Lyne", "pos"]
 - ["V4Lyne4Lyne", "updateValues"]
+- ["V4Lyne4Lyne", "users"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
@@ -186,4 +187,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "3d7bb8c6c911884e92b0b451490e7dcf"
+interface-hash: "b2375483b89b77277b5b95dd2b6230e3"

@@ -42,7 +42,7 @@
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		rjjFlq4yauGlTAXccNrFdFVtQ0U=
+		NYrzL42+QSrctTernWOlnTSqdfo=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
-		gPdx/9Mzp/g2y28RmC3GfsGyl/A=
+		uGyTJcbM0hoK/f2nbHmv7nMneXA=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
 		<data>
@@ -63,6 +63,18 @@
 		<key>Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources</key>
 		<data>
 		jtO1U744q6IMz/UarDl7wwpXo7c=
+		</data>
+		<key>Frameworks/SCLAlertView.framework/Info.plist</key>
+		<data>
+		ASwrNzPctfR/c0c/fHMmWsCHoTI=
+		</data>
+		<key>Frameworks/SCLAlertView.framework/SCLAlertView</key>
+		<data>
+		ariIqXlFtIXo3hxUwbYrKX47/Qo=
+		</data>
+		<key>Frameworks/SCLAlertView.framework/_CodeSignature/CodeResources</key>
+		<data>
+		sqXnKVWPz5FZRKOt+xK4I3d4Z2k=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -270,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rjjFlq4yauGlTAXccNrFdFVtQ0U=
+			NYrzL42+QSrctTernWOlnTSqdfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			81uda0omm0RXd+GzpFbaAkDRUzEaWO74DCj08bu8J14=
+			CuRKCUhGz9AEifd3znVilBx9NUzNWJs4pVwDXupfWiA=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
@@ -303,11 +315,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gPdx/9Mzp/g2y28RmC3GfsGyl/A=
+			uGyTJcbM0hoK/f2nbHmv7nMneXA=
 			</data>
 			<key>hash2</key>
 			<data>
-			xyr2wQm64W2h/V5xRmL7jiTJkxDZXjq6n1xbdHCs9ew=
+			/FMiAcVGuu/wEJa3bZ8FzQdhjUolHNsrdI2VG4sLsB0=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
@@ -330,6 +342,39 @@
 			<key>hash2</key>
 			<data>
 			+iGAlLvmman/aDUONupoQmvXrwF7YTEjLrJcO1/YIpk=
+			</data>
+		</dict>
+		<key>Frameworks/SCLAlertView.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ASwrNzPctfR/c0c/fHMmWsCHoTI=
+			</data>
+			<key>hash2</key>
+			<data>
+			ORrwJGEiydkeuWhm0zfC+tgB2uatz/aJEMQwqIwQxg0=
+			</data>
+		</dict>
+		<key>Frameworks/SCLAlertView.framework/SCLAlertView</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ariIqXlFtIXo3hxUwbYrKX47/Qo=
+			</data>
+			<key>hash2</key>
+			<data>
+			aIspzovq1PoYqA+xHDI4nZgDa36V5cgPHrFT8LipqW0=
+			</data>
+		</dict>
+		<key>Frameworks/SCLAlertView.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sqXnKVWPz5FZRKOt+xK4I3d4Z2k=
+			</data>
+			<key>hash2</key>
+			<data>
+			6upTI0Ri9d/QPy8tIhPJiRWqyPlhoTtfha7ERoQdrBQ=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>

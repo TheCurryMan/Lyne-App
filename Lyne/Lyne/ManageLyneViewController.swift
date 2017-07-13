@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import SCLAlertView
 
 class ManageLyneViewController: UIViewController {
     
@@ -106,8 +107,23 @@ class ManageLyneViewController: UIViewController {
     }
 
     @IBAction func addPerson(_ sender: Any) {
-        
-        
+        timer?.invalidate()
+        let num : CGFloat = 140.0
+        let appearance = SCLAlertView.SCLAppearance(
+            kTitleFont: UIFont(name: "Avenir Next", size: 30)!,
+            kTextFont: UIFont(name: "Avenir Next", size: 16)!,
+            kButtonFont: UIFont(name: "Avenir Next", size: 16)!,
+            showCloseButton: false,
+            showCircularIcon: false
+
+        )
+        let alert = SCLAlertView(appearance: appearance)
+    
+        let txt = alert.addTextField("Enter Name")
+        alert.addButton("Done") {
+            print("Text value: \(txt.text!)")
+        }
+        alert.showInfo("#\((cu.lyneCreated?.num)! + (cu.lyneCreated?.pos)!)", subTitle: "Add Person to Lyne")
     }
     
     func updateTimer() {
