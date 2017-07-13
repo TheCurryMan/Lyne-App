@@ -108,7 +108,6 @@ class ManageLyneViewController: UIViewController {
 
     @IBAction func addPerson(_ sender: Any) {
         timer?.invalidate()
-        let num : CGFloat = 140.0
         let appearance = SCLAlertView.SCLAppearance(
             kTitleFont: UIFont(name: "Avenir Next", size: 30)!,
             kTextFont: UIFont(name: "Avenir Next", size: 16)!,
@@ -121,7 +120,11 @@ class ManageLyneViewController: UIViewController {
     
         let txt = alert.addTextField("Enter Name")
         alert.addButton("Done") {
-            print("Text value: \(txt.text!)")
+            let key = txt.text!
+            self.cu.lyneCreated?.num! += 1
+            self.cu.lyneCreated?.users?.append(key)
+            self.ref.child("lynes").child(self.cu.lyneCreated!.id!).updateChildValues(["num": (self.cu.lyneCreated?.num)!, "users":(self.cu.lyneCreated?.users)!])
+            //self.ref.child("users").child("\(key)").setValue(["name": txt.text!])
         }
         alert.showInfo("#\((cu.lyneCreated?.num)! + (cu.lyneCreated?.pos)!)", subTitle: "Add Person to Lyne")
     }
