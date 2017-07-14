@@ -124,8 +124,13 @@ class ManageLyneViewController: UIViewController {
             self.cu.lyneCreated?.num! += 1
             self.cu.lyneCreated?.users?.append(key)
             self.ref.child("lynes").child(self.cu.lyneCreated!.id!).updateChildValues(["num": (self.cu.lyneCreated?.num)!, "users":(self.cu.lyneCreated?.users)!])
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
             //self.ref.child("users").child("\(key)").setValue(["name": txt.text!])
         }
+        alert.addButton("Cancel") {
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
+        }
+        
         alert.showInfo("#\((cu.lyneCreated?.num)! + (cu.lyneCreated?.pos)!)", subTitle: "Add Person to Lyne")
     }
     
