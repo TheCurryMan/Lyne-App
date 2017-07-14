@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 target 'Lyne' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
   use_frameworks!
 
   # Pods for Lyne
@@ -11,16 +11,10 @@ target 'Lyne' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'SCLAlertView'
+  pod 'OneSignal', '>= 2.5.2', '< 3.0'
 
+end
 
-  target 'LyneTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'LyneUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignal', '>= 2.5.2', '< 3.0'
 end

@@ -42,7 +42,7 @@
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		NYrzL42+QSrctTernWOlnTSqdfo=
+		qQKNSzcDTWNHUX7TZ/VN0e+vIgM=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
-		uGyTJcbM0hoK/f2nbHmv7nMneXA=
+		VhEA0Yp1eW/5EvE64NPbg8t7tjg=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/SCLAlertView.framework/SCLAlertView</key>
 		<data>
-		ariIqXlFtIXo3hxUwbYrKX47/Qo=
+		3/Brw1Z020fEx99WNF9JdP1cPDM=
 		</data>
 		<key>Frameworks/SCLAlertView.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hEfVZLiH4y+k3I+iqmu4prXcBmA=
+		QReLA2rEbIGlqedTFiGZbvNFads=
 		</data>
 		<key>LyneTableViewCell.nib</key>
 		<data>
@@ -139,6 +139,18 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/Info.plist</key>
+		<data>
+		tmhwWuj4iB3oriAeRv3D5l8Ztkg=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/OneSignalNotificationServiceExtension</key>
+		<data>
+		WvMGbQEWK0Tk1GMJjHa87uhwNvM=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		Nt7Fm1iDfJNnSCeowsYCuCkolN8=
 		</data>
 		<key>add.png</key>
 		<data>
@@ -282,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYrzL42+QSrctTernWOlnTSqdfo=
+			qQKNSzcDTWNHUX7TZ/VN0e+vIgM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CuRKCUhGz9AEifd3znVilBx9NUzNWJs4pVwDXupfWiA=
+			dkKAwMfXDaAUMViVL1uvSCCjm4NTYeNydqys4wIjAvc=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
@@ -315,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uGyTJcbM0hoK/f2nbHmv7nMneXA=
+			VhEA0Yp1eW/5EvE64NPbg8t7tjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/FMiAcVGuu/wEJa3bZ8FzQdhjUolHNsrdI2VG4sLsB0=
+			8l8kGZ/1KYXIdscdJ4PZVBvktPcfX9uL9FruWKe6DDQ=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
@@ -359,11 +371,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ariIqXlFtIXo3hxUwbYrKX47/Qo=
+			3/Brw1Z020fEx99WNF9JdP1cPDM=
 			</data>
 			<key>hash2</key>
 			<data>
-			aIspzovq1PoYqA+xHDI4nZgDa36V5cgPHrFT8LipqW0=
+			VuY+OFErto+UT52zDpZZoT+RcWqJ2d+RUMGIg0Xc0bg=
 			</data>
 		</dict>
 		<key>Frameworks/SCLAlertView.framework/_CodeSignature/CodeResources</key>
@@ -529,6 +541,39 @@
 			<key>hash2</key>
 			<data>
 			asF2V7ObKCdRaqHUEG3K97H8HY8NWyxCl70wvUQY0ig=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tmhwWuj4iB3oriAeRv3D5l8Ztkg=
+			</data>
+			<key>hash2</key>
+			<data>
+			yzRRAIfbliG283TGH8QCtx5b5gAvkI61FUx/udlCf4E=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/OneSignalNotificationServiceExtension</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WvMGbQEWK0Tk1GMJjHa87uhwNvM=
+			</data>
+			<key>hash2</key>
+			<data>
+			2/tUh3LtnxMlOPLm94AAVw1AKpVw9I8nuR+AeP+AcW4=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nt7Fm1iDfJNnSCeowsYCuCkolN8=
+			</data>
+			<key>hash2</key>
+			<data>
+			e8Ktyfuqlc1ejoJsuxizBQZ6xQr+7x/FlBQkxOz28Js=
 			</data>
 		</dict>
 		<key>add.png</key>

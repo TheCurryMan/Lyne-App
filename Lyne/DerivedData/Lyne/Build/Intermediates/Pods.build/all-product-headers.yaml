@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "GTMSessionFetcher-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
         },
         {
           'type': 'file',
@@ -40,18 +40,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphoneos/GTMSessionFetcher.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -91,7 +91,7 @@
         {
           'type': 'file',
           'name': "GoogleToolboxForMac-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
         },
         {
           'type': 'file',
@@ -102,18 +102,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/Pods_Lyne.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/Pods_Lyne.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -123,29 +123,29 @@
         {
           'type': 'file',
           'name': "Pods_Lyne-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/Pods_Lyne.framework/Headers/Pods_Lyne-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/Pods_Lyne.framework/Headers/Pods_Lyne-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/Pods_Lyne.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/Pods_Lyne.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Lyne.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-Lyne.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SCLAlertView-Swift.h",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
         },
         {
           'type': 'file',
@@ -156,12 +156,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules",
+      'name': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphonesimulator/SCLAlertView.build/module.modulemap"
+          'external-contents': "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Intermediates/Pods.build/Debug-iphoneos/SCLAlertView.build/module.modulemap"
         }
       ]
     }

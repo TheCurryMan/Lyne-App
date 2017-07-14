@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/SCLAlertView.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		fV8UwS0O+ELjmiuie2N6NO2RYYQ=
+		rpmAtnY6qeFKDMUE8ccbX55J+lA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fV8UwS0O+ELjmiuie2N6NO2RYYQ=
+			rpmAtnY6qeFKDMUE8ccbX55J+lA=
 			</data>
 			<key>hash2</key>
 			<data>
-			PZq5aCoHyQiq4uCmCyLEDD/EMAdO6TvSPnLl0jMjDEI=
+			gy6J3zKO2Vq23rTEmN8w5tqabsQvHc/EPv5dhiHD1BQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

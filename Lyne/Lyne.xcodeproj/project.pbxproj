@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C8D6478D8E4B0A2207FFB7A /* Pods_Lyne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F86C031B68521841236CC60 /* Pods_Lyne.framework */; };
-		7D826156AFFC513CF7E3A1D9 /* Pods_LyneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F787C8732890D38F2EEAEE4 /* Pods_LyneUITests.framework */; };
+		BD8B9415811792B9E4610047 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6934D9AEE20EA41BE9C83B9E /* libPods-OneSignalNotificationServiceExtension.a */; };
 		E11AC0381F12D410003CAF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AC0371F12D410003CAF69 /* AppDelegate.swift */; };
 		E11AC03D1F12D410003CAF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11AC03B1F12D410003CAF69 /* Main.storyboard */; };
 		E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11AC03E1F12D410003CAF69 /* Assets.xcassets */; };
@@ -21,6 +21,8 @@
 		E12A9F521F15642000509D39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E12A9F511F15642000509D39 /* GoogleService-Info.plist */; };
 		E12A9F541F15689B00509D39 /* Lyne.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A9F531F15689B00509D39 /* Lyne.swift */; };
 		E12A9F561F15AEFC00509D39 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A9F551F15AEFC00509D39 /* CreateViewController.swift */; };
+		E13C6B981F184C1000311376 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C6B971F184C1000311376 /* NotificationService.swift */; };
+		E13C6B9C1F184C1000311376 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E13C6B951F184C1000311376 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E140C4401F12E52F000094A1 /* annotation.png in Resources */ = {isa = PBXBuildFile; fileRef = E140C43F1F12E52F000094A1 /* annotation.png */; };
 		E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */; };
 		E190E3CD1F16BA61004B4E44 /* ManageLyneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */; };
@@ -30,7 +32,6 @@
 		E190E3D71F16CE2B004B4E44 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D61F16CE2B004B4E44 /* checkmark.png */; };
 		E190E3DD1F16D6DB004B4E44 /* greencheck.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3DC1F16D6DB004B4E44 /* greencheck.png */; };
 		E190E3DF1F16ED83004B4E44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190E3DE1F16ED83004B4E44 /* User.swift */; };
-		FEC3F7BD4049A46EAD038932 /* Pods_LyneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,16 +49,36 @@
 			remoteGlobalIDString = E11AC0331F12D410003CAF69;
 			remoteInfo = Lyne;
 		};
+		E13C6B9A1F184C1000311376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E11AC02C1F12D410003CAF69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E13C6B941F184C1000311376;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E13C6BA01F184C1000311376 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E13C6B9C1F184C1000311376 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		19B907B4ABC52D57EB94B296 /* Pods-LyneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1B403E749C0F28BCC55CDAAA /* Pods-LyneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14689BFC03F924606CD567EB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F787C8732890D38F2EEAEE4 /* Pods_LyneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C94CAB40A90079CFBB1A4FE /* Pods-LyneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests.release.xcconfig"; sourceTree = "<group>"; };
+		429D4FA8DC4A1FDD800DFD7E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		5F86C031B68521841236CC60 /* Pods_Lyne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lyne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DBE26E978FC1024E9CBF7BD /* Pods-LyneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyneUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6934D9AEE20EA41BE9C83B9E /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8864A6BC4581F68960B59C0D /* Pods-Lyne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lyne/Pods-Lyne.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCCAE4602E5C1A7B7FE0EDF /* Pods-Lyne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lyne.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lyne/Pods-Lyne.release.xcconfig"; sourceTree = "<group>"; };
 		E11AC0341F12D410003CAF69 /* Lyne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +99,10 @@
 		E12A9F511F15642000509D39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E12A9F531F15689B00509D39 /* Lyne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lyne.swift; sourceTree = "<group>"; };
 		E12A9F551F15AEFC00509D39 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		E13C6B951F184C1000311376 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13C6B971F184C1000311376 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E13C6B991F184C1000311376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E13C6BA11F184CB100311376 /* Lyne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lyne.entitlements; sourceTree = "<group>"; };
 		E140C43F1F12E52F000094A1 /* annotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation.png; sourceTree = "<group>"; };
 		E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyneTableViewCell.xib; sourceTree = "<group>"; };
 		E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageLyneViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC3F7BD4049A46EAD038932 /* Pods_LyneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +134,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D826156AFFC513CF7E3A1D9 /* Pods_LyneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E13C6B921F184C1000311376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8B9415811792B9E4610047 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +154,7 @@
 				5F86C031B68521841236CC60 /* Pods_Lyne.framework */,
 				264D5E0D3FA8103DEBA16BAE /* Pods_LyneTests.framework */,
 				2F787C8732890D38F2EEAEE4 /* Pods_LyneUITests.framework */,
+				6934D9AEE20EA41BE9C83B9E /* libPods-OneSignalNotificationServiceExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +165,7 @@
 				E11AC0361F12D410003CAF69 /* Lyne */,
 				E11AC04B1F12D410003CAF69 /* LyneTests */,
 				E11AC0561F12D410003CAF69 /* LyneUITests */,
+				E13C6B961F184C1000311376 /* OneSignalNotificationServiceExtension */,
 				E11AC0351F12D410003CAF69 /* Products */,
 				E521BDB71A9566FA73E233A7 /* Pods */,
 				46D63FFFCEEAC1C4E27FEBE2 /* Frameworks */,
@@ -145,6 +178,7 @@
 				E11AC0341F12D410003CAF69 /* Lyne.app */,
 				E11AC0481F12D410003CAF69 /* LyneTests.xctest */,
 				E11AC0531F12D410003CAF69 /* LyneUITests.xctest */,
+				E13C6B951F184C1000311376 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +186,7 @@
 		E11AC0361F12D410003CAF69 /* Lyne */ = {
 			isa = PBXGroup;
 			children = (
+				E13C6BA11F184CB100311376 /* Lyne.entitlements */,
 				E11AC0371F12D410003CAF69 /* AppDelegate.swift */,
 				E12A9F531F15689B00509D39 /* Lyne.swift */,
 				E190E3DE1F16ED83004B4E44 /* User.swift */,
@@ -194,15 +229,22 @@
 			path = LyneUITests;
 			sourceTree = "<group>";
 		};
+		E13C6B961F184C1000311376 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E13C6B971F184C1000311376 /* NotificationService.swift */,
+				E13C6B991F184C1000311376 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		E521BDB71A9566FA73E233A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				8864A6BC4581F68960B59C0D /* Pods-Lyne.debug.xcconfig */,
 				8BCCAE4602E5C1A7B7FE0EDF /* Pods-Lyne.release.xcconfig */,
-				19B907B4ABC52D57EB94B296 /* Pods-LyneTests.debug.xcconfig */,
-				5C94CAB40A90079CFBB1A4FE /* Pods-LyneTests.release.xcconfig */,
-				1B403E749C0F28BCC55CDAAA /* Pods-LyneUITests.debug.xcconfig */,
-				6DBE26E978FC1024E9CBF7BD /* Pods-LyneUITests.release.xcconfig */,
+				429D4FA8DC4A1FDD800DFD7E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				14689BFC03F924606CD567EB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -220,10 +262,12 @@
 				E11AC0321F12D410003CAF69 /* Resources */,
 				C87E02DB52FE1323A1DC2DE3 /* [CP] Embed Pods Frameworks */,
 				8D313E24B5649536A39F58B1 /* [CP] Copy Pods Resources */,
+				E13C6BA01F184C1000311376 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E13C6B9B1F184C1000311376 /* PBXTargetDependency */,
 			);
 			name = Lyne;
 			productName = Lyne;
@@ -234,12 +278,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E11AC05F1F12D410003CAF69 /* Build configuration list for PBXNativeTarget "LyneTests" */;
 			buildPhases = (
-				6BDC0E76BE6E24F304D7FF32 /* [CP] Check Pods Manifest.lock */,
 				E11AC0441F12D410003CAF69 /* Sources */,
 				E11AC0451F12D410003CAF69 /* Frameworks */,
 				E11AC0461F12D410003CAF69 /* Resources */,
-				D089EB7A7A606FA0438D9049 /* [CP] Embed Pods Frameworks */,
-				1DD75957073BF59E04E0714F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,12 +296,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E11AC0621F12D410003CAF69 /* Build configuration list for PBXNativeTarget "LyneUITests" */;
 			buildPhases = (
-				01580518E1AB4891C0293BB8 /* [CP] Check Pods Manifest.lock */,
 				E11AC04F1F12D410003CAF69 /* Sources */,
 				E11AC0501F12D410003CAF69 /* Frameworks */,
 				E11AC0511F12D410003CAF69 /* Resources */,
-				E956CC09C34451E0D66B6A06 /* [CP] Embed Pods Frameworks */,
-				E67E02B1EB8C9E81E604B877 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +309,25 @@
 			productName = LyneUITests;
 			productReference = E11AC0531F12D410003CAF69 /* LyneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E13C6B941F184C1000311376 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E13C6B9F1F184C1000311376 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				0E0E8434440FC39C01F06D92 /* [CP] Check Pods Manifest.lock */,
+				E13C6B911F184C1000311376 /* Sources */,
+				E13C6B921F184C1000311376 /* Frameworks */,
+				E13C6B931F184C1000311376 /* Resources */,
+				028B6A8405BD56A9ACB0436F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = E13C6B951F184C1000311376 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -286,6 +343,17 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 3V593WX43L;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					E11AC0471F12D410003CAF69 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -298,6 +366,11 @@
 						DevelopmentTeam = 3V593WX43L;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E11AC0331F12D410003CAF69;
+					};
+					E13C6B941F184C1000311376 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3V593WX43L;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -317,6 +390,7 @@
 				E11AC0331F12D410003CAF69 /* Lyne */,
 				E11AC0471F12D410003CAF69 /* LyneTests */,
 				E11AC0521F12D410003CAF69 /* LyneUITests */,
+				E13C6B941F184C1000311376 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -356,25 +430,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		01580518E1AB4891C0293BB8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
+		E13C6B931F184C1000311376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
-		1DD75957073BF59E04E0714F /* [CP] Copy Pods Resources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		028B6A8405BD56A9ACB0436F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,10 +452,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6BDC0E76BE6E24F304D7FF32 /* [CP] Check Pods Manifest.lock */ = {
+		0E0E8434440FC39C01F06D92 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,51 +515,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lyne/Pods-Lyne-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D089EB7A7A606FA0438D9049 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneTests/Pods-LyneTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E67E02B1EB8C9E81E604B877 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E956CC09C34451E0D66B6A06 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyneUITests/Pods-LyneUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -526,6 +547,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E13C6B911F184C1000311376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13C6B981F184C1000311376 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -538,6 +567,11 @@
 			isa = PBXTargetDependency;
 			target = E11AC0331F12D410003CAF69 /* Lyne */;
 			targetProxy = E11AC0541F12D410003CAF69 /* PBXContainerItemProxy */;
+		};
+		E13C6B9B1F184C1000311376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E13C6B941F184C1000311376 /* OneSignalNotificationServiceExtension */;
+			targetProxy = E13C6B9A1F184C1000311376 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -658,7 +692,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8864A6BC4581F68960B59C0D /* Pods-Lyne.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lyne/Lyne.entitlements;
 				DEVELOPMENT_TEAM = 3V593WX43L;
 				INFOPLIST_FILE = Lyne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -672,7 +708,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BCCAE4602E5C1A7B7FE0EDF /* Pods-Lyne.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lyne/Lyne.entitlements;
 				DEVELOPMENT_TEAM = 3V593WX43L;
 				INFOPLIST_FILE = Lyne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -684,7 +722,6 @@
 		};
 		E11AC0601F12D410003CAF69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19B907B4ABC52D57EB94B296 /* Pods-LyneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -700,7 +737,6 @@
 		};
 		E11AC0611F12D410003CAF69 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C94CAB40A90079CFBB1A4FE /* Pods-LyneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -716,7 +752,6 @@
 		};
 		E11AC0631F12D410003CAF69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B403E749C0F28BCC55CDAAA /* Pods-LyneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3V593WX43L;
@@ -731,7 +766,6 @@
 		};
 		E11AC0641F12D410003CAF69 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DBE26E978FC1024E9CBF7BD /* Pods-LyneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3V593WX43L;
@@ -741,6 +775,34 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Lyne;
+			};
+			name = Release;
+		};
+		E13C6B9D1F184C1000311376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429D4FA8DC4A1FDD800DFD7E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.Lyne.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E13C6B9E1F184C1000311376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14689BFC03F924606CD567EB /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3V593WX43L;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Edcast.Lyne.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -779,6 +841,15 @@
 			buildConfigurations = (
 				E11AC0631F12D410003CAF69 /* Debug */,
 				E11AC0641F12D410003CAF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E13C6B9F1F184C1000311376 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E13C6B9D1F184C1000311376 /* Debug */,
+				E13C6B9E1F184C1000311376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

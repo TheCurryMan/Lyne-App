@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "217b973a52b72132180ae3804df95f6a"
+build_time: [553308540, 286247000]
+inputs:
+  "/Users/Avinash/Documents/Code/Lyne-App/Lyne/OneSignalNotificationServiceExtension/NotificationService.swift": [553308462, 0]

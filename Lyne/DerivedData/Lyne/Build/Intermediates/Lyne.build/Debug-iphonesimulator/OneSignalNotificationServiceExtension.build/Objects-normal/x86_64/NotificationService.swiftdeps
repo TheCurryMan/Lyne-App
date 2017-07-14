@@ -1,0 +1,190 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NotificationService"
+provides-nominal:
+- "C37OneSignalNotificationServiceExtension19NotificationService"
+provides-member:
+- ["C37OneSignalNotificationServiceExtension19NotificationService", ""]
+provides-dynamic-lookup:
+- "bestAttemptContent"
+- "contentHandler"
+- "didReceive"
+- "receivedRequest"
+- "serviceExtensionTimeWillExpire"
+depends-top-level:
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "NotificationService"
+- !private "OneSignal"
+- "UNMutableNotificationContent"
+- "UNNotificationContent"
+- "UNNotificationRequest"
+- "UNNotificationServiceExtension"
+- "Void"
+depends-member:
+- !private ["Ps9AnyObject", "OneSignal"]
+- !private ["Ps9AnyObject", "bestAttemptContent"]
+- !private ["Ps9AnyObject", "content"]
+- !private ["Ps9AnyObject", "contentHandler"]
+- !private ["Ps9AnyObject", "didReceiveNotificationExtensionRequest"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mutableCopy"]
+- !private ["Ps9AnyObject", "receivedRequest"]
+- !private ["Ps9AnyObject", "serviceExtensionTimeWillExpireRequest"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "OneSignal"]
+- !private ["Ps7CVarArg", "bestAttemptContent"]
+- !private ["Ps7CVarArg", "content"]
+- !private ["Ps7CVarArg", "contentHandler"]
+- !private ["Ps7CVarArg", "didReceiveNotificationExtensionRequest"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "mutableCopy"]
+- !private ["Ps7CVarArg", "receivedRequest"]
+- !private ["Ps7CVarArg", "serviceExtensionTimeWillExpireRequest"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "OneSignal"]
+- !private ["Ps28CustomDebugStringConvertible", "bestAttemptContent"]
+- !private ["Ps28CustomDebugStringConvertible", "content"]
+- !private ["Ps28CustomDebugStringConvertible", "contentHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveNotificationExtensionRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "mutableCopy"]
+- !private ["Ps28CustomDebugStringConvertible", "receivedRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "serviceExtensionTimeWillExpireRequest"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "OneSignal"]
+- !private ["Ps23CustomStringConvertible", "bestAttemptContent"]
+- !private ["Ps23CustomStringConvertible", "content"]
+- !private ["Ps23CustomStringConvertible", "contentHandler"]
+- !private ["Ps23CustomStringConvertible", "didReceiveNotificationExtensionRequest"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "mutableCopy"]
+- !private ["Ps23CustomStringConvertible", "receivedRequest"]
+- !private ["Ps23CustomStringConvertible", "serviceExtensionTimeWillExpireRequest"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "OneSignal"]
+- !private ["Ps9Equatable", "bestAttemptContent"]
+- !private ["Ps9Equatable", "content"]
+- !private ["Ps9Equatable", "contentHandler"]
+- !private ["Ps9Equatable", "didReceiveNotificationExtensionRequest"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "mutableCopy"]
+- !private ["Ps9Equatable", "receivedRequest"]
+- !private ["Ps9Equatable", "serviceExtensionTimeWillExpireRequest"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "OneSignal"]
+- !private ["Ps8Hashable", "bestAttemptContent"]
+- !private ["Ps8Hashable", "content"]
+- !private ["Ps8Hashable", "contentHandler"]
+- !private ["Ps8Hashable", "didReceiveNotificationExtensionRequest"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "mutableCopy"]
+- !private ["Ps8Hashable", "receivedRequest"]
+- !private ["Ps8Hashable", "serviceExtensionTimeWillExpireRequest"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "content"]
+- !private ["PSo8NSCoding", "mutableCopy"]
+- !private ["PSo9NSCopying", "content"]
+- !private ["PSo9NSCopying", "mutableCopy"]
+- !private ["PSo16NSMutableCopying", "mutableCopy"]
+- !private ["CSo8NSObject", "OneSignal"]
+- ["CSo8NSObject", "UNMutableNotificationContent"]
+- ["CSo8NSObject", "UNNotificationContent"]
+- ["CSo8NSObject", "UNNotificationRequest"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "bestAttemptContent"]
+- !private ["CSo8NSObject", "content"]
+- ["CSo8NSObject", "contentHandler"]
+- ["CSo8NSObject", "didReceive"]
+- !private ["CSo8NSObject", "didReceiveNotificationExtensionRequest"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "mutableCopy"]
+- ["CSo8NSObject", "receivedRequest"]
+- ["CSo8NSObject", "serviceExtensionTimeWillExpire"]
+- !private ["CSo8NSObject", "serviceExtensionTimeWillExpireRequest"]
+- !private ["PSo16NSObjectProtocol", "OneSignal"]
+- !private ["PSo16NSObjectProtocol", "bestAttemptContent"]
+- !private ["PSo16NSObjectProtocol", "content"]
+- !private ["PSo16NSObjectProtocol", "contentHandler"]
+- !private ["PSo16NSObjectProtocol", "didReceiveNotificationExtensionRequest"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mutableCopy"]
+- !private ["PSo16NSObjectProtocol", "receivedRequest"]
+- !private ["PSo16NSObjectProtocol", "serviceExtensionTimeWillExpireRequest"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "content"]
+- !private ["PSo14NSSecureCoding", "mutableCopy"]
+- !private ["C37OneSignalNotificationServiceExtension19NotificationService", "OneSignal"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "UNMutableNotificationContent"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "UNNotificationContent"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "UNNotificationRequest"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "Void"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "bestAttemptContent"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "contentHandler"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "deinit"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "didReceive"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "init"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "receivedRequest"]
+- ["C37OneSignalNotificationServiceExtension19NotificationService", "serviceExtensionTimeWillExpire"]
+- !private ["CSo9OneSignal", "didReceiveNotificationExtensionRequest"]
+- !private ["CSo9OneSignal", "serviceExtensionTimeWillExpireRequest"]
+- !private ["CSo21UNNotificationContent", "mutableCopy"]
+- !private ["CSo21UNNotificationRequest", "content"]
+- !private ["CSo30UNNotificationServiceExtension", "OneSignal"]
+- ["CSo30UNNotificationServiceExtension", "UNMutableNotificationContent"]
+- ["CSo30UNNotificationServiceExtension", "UNNotificationContent"]
+- ["CSo30UNNotificationServiceExtension", "UNNotificationRequest"]
+- ["CSo30UNNotificationServiceExtension", "Void"]
+- ["CSo30UNNotificationServiceExtension", "bestAttemptContent"]
+- ["CSo30UNNotificationServiceExtension", "contentHandler"]
+- ["CSo30UNNotificationServiceExtension", "didReceive"]
+- ["CSo30UNNotificationServiceExtension", "init"]
+- ["CSo30UNNotificationServiceExtension", "receivedRequest"]
+- ["CSo30UNNotificationServiceExtension", "serviceExtensionTimeWillExpire"]
+- ["CSo30UNNotificationServiceExtension", ""]
+- !private ["Ps9_Hashable", "OneSignal"]
+- !private ["Ps9_Hashable", "bestAttemptContent"]
+- !private ["Ps9_Hashable", "content"]
+- !private ["Ps9_Hashable", "contentHandler"]
+- !private ["Ps9_Hashable", "didReceiveNotificationExtensionRequest"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "mutableCopy"]
+- !private ["Ps9_Hashable", "receivedRequest"]
+- !private ["Ps9_Hashable", "serviceExtensionTimeWillExpireRequest"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "C37OneSignalNotificationServiceExtension19NotificationService"
+- !private "CSo9OneSignal"
+- !private "CSo21UNNotificationContent"
+- !private "CSo21UNNotificationRequest"
+- "CSo30UNNotificationServiceExtension"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UserNotifications.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules/module.modulemap"
+interface-hash: "112182106c08a64fcd82d27c96601454"

@@ -133,6 +133,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import OneSignal;
 @import CoreLocation;
 @import MapKit;
 @import Foundation;
@@ -142,11 +143,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
 @class UIApplication;
+@class OSSubscriptionStateChanges;
 
 SWIFT_CLASS("_TtC4Lyne11AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <OSSubscriptionObserver, UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (void)onOSSubscriptionChanged:(OSSubscriptionStateChanges * _Null_unspecified)stateChanges;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -155,8 +158,25 @@ SWIFT_CLASS("_TtC4Lyne11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
+@class FIRDatabaseReference;
+@class UITextField;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC4Lyne20CreateViewController")
+@interface CreateViewController : UIViewController
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lyneName;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lyneID;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lyneLocation;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+- (IBAction)createLyne:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
 
 SWIFT_CLASS("_TtC4Lyne17JoinTableViewCell")
 @interface JoinTableViewCell : UITableViewCell
@@ -174,22 +194,52 @@ SWIFT_CLASS("_TtC4Lyne17JoinTableViewCell")
 @class CLLocation;
 @protocol MKAnnotation;
 @class MKAnnotationView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC4Lyne18JoinViewController")
 @interface JoinViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, strong) CLLocation * _Nonnull userLocation;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)getFirebaseData;
 - (IBAction)locateMe;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (void)addAnnotationsWithCoords:(NSArray<CLLocation *> * _Nonnull)coords;
+- (void)addAnnotations;
 - (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CLLocationDistance)getDistanceFromCurrentLocationWithOtherLoc:(CLLocationCoordinate2D)otherLoc SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class NSTimer;
+
+SWIFT_CLASS("_TtC4Lyne24ManageLyneViewController")
+@interface ManageLyneViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timerLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lynePosition;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneCurrentUserName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lyneNumberOfPeople;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified checkmarkButton;
+@property (nonatomic) BOOL checkPressed;
+@property (nonatomic) NSInteger timerCounter;
+@property (nonatomic, weak) NSTimer * _Nullable timer;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)updateView;
+- (void)getData;
+- (IBAction)personShowedUp:(id _Nonnull)sender;
+- (IBAction)nextPerson:(id _Nonnull)sender;
+- (IBAction)addPerson:(id _Nonnull)sender;
+- (void)updateTimer;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

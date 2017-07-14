@@ -4,13 +4,18 @@
 <dict>
 	<key>application-identifier</key>
 	<string>3V593WX43L.Edcast.Lyne</string>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.networking.networkextension</key>
+	<array>
+		<string>app-proxy-provider</string>
+		<string>content-filter-provider</string>
+		<string>packet-tunnel-provider</string>
+		<string>dns-proxy</string>
+	</array>
 	<key>com.apple.developer.team-identifier</key>
 	<string>3V593WX43L</string>
 	<key>get-task-allow</key>
 	<true/>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>3V593WX43L.Edcast.Lyne</string>
-	</array>
 </dict>
 </plist>

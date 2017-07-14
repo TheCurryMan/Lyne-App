@@ -12,19 +12,35 @@ provides-dynamic-lookup:
 - "applicationWillEnterForeground"
 - "applicationWillResignActive"
 - "applicationWillTerminate"
+- "onOSSubscriptionChanged"
 - "window"
 depends-top-level:
+- !private "!"
+- !private "&&"
 - "AppDelegate"
+- "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
+- !private "CastingPrecedence"
+- !private "Dictionary"
 - !private "FirebaseApp"
+- !private "OSNotificationDisplayType"
+- "OSSubscriptionObserver"
+- "OSSubscriptionStateChanges"
+- !private "OneSignal"
+- !private "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIApplicationLaunchOptionsKey"
 - "UIResponder"
 - "UIWindow"
+- !private "kOSSettingsKeyAutoPrompt"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "FirebaseApp"]
+- !private ["Ps9AnyObject", "OSNotificationDisplayType"]
+- !private ["Ps9AnyObject", "OneSignal"]
+- !private ["Ps9AnyObject", "add"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -38,11 +54,25 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - !private ["Ps9AnyObject", "configure"]
+- !private ["Ps9AnyObject", "from"]
+- !private ["Ps9AnyObject", "inFocusDisplayType"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initWithLaunchOptions"]
+- !private ["Ps9AnyObject", "kOSSettingsKeyAutoPrompt"]
+- ["Ps9AnyObject", "onOSSubscriptionChanged"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "promptForPushNotifications"]
+- !private ["Ps9AnyObject", "subscribed"]
+- !private ["Ps9AnyObject", "to"]
+- !private ["Ps9AnyObject", "userId"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C4Lyne11AppDelegate", "Bool"]
 - !private ["C4Lyne11AppDelegate", "FirebaseApp"]
+- !private ["C4Lyne11AppDelegate", "OSNotificationDisplayType"]
+- !private ["C4Lyne11AppDelegate", "OSSubscriptionObserver"]
+- ["C4Lyne11AppDelegate", "OSSubscriptionStateChanges"]
+- !private ["C4Lyne11AppDelegate", "OneSignal"]
 - ["C4Lyne11AppDelegate", "UIApplication"]
 - ["C4Lyne11AppDelegate", "UIApplicationLaunchOptionsKey"]
 - ["C4Lyne11AppDelegate", "UIWindow"]
@@ -60,8 +90,15 @@ depends-member:
 - ["C4Lyne11AppDelegate", "applicationWillTerminate"]
 - ["C4Lyne11AppDelegate", "deinit"]
 - ["C4Lyne11AppDelegate", "init"]
+- !private ["C4Lyne11AppDelegate", "kOSSettingsKeyAutoPrompt"]
+- ["C4Lyne11AppDelegate", "onOSSubscriptionChanged"]
+- !private ["C4Lyne11AppDelegate", "print"]
 - ["C4Lyne11AppDelegate", "window"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Ps7CVarArg", "FirebaseApp"]
+- !private ["Ps7CVarArg", "OSNotificationDisplayType"]
+- !private ["Ps7CVarArg", "OneSignal"]
+- !private ["Ps7CVarArg", "add"]
 - ["Ps7CVarArg", "application"]
 - ["Ps7CVarArg", "applicationDidBecomeActive"]
 - ["Ps7CVarArg", "applicationDidEnterBackground"]
@@ -75,10 +112,24 @@ depends-member:
 - ["Ps7CVarArg", "applicationWillResignActive"]
 - ["Ps7CVarArg", "applicationWillTerminate"]
 - !private ["Ps7CVarArg", "configure"]
+- !private ["Ps7CVarArg", "from"]
+- !private ["Ps7CVarArg", "inFocusDisplayType"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "initWithLaunchOptions"]
+- !private ["Ps7CVarArg", "kOSSettingsKeyAutoPrompt"]
+- ["Ps7CVarArg", "onOSSubscriptionChanged"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "promptForPushNotifications"]
+- !private ["Ps7CVarArg", "subscribed"]
+- !private ["Ps7CVarArg", "to"]
+- !private ["Ps7CVarArg", "userId"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "FirebaseApp"]
+- !private ["Ps28CustomDebugStringConvertible", "OSNotificationDisplayType"]
+- !private ["Ps28CustomDebugStringConvertible", "OneSignal"]
+- !private ["Ps28CustomDebugStringConvertible", "add"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -92,10 +143,28 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - !private ["Ps28CustomDebugStringConvertible", "configure"]
+- !private ["Ps28CustomDebugStringConvertible", "from"]
+- !private ["Ps28CustomDebugStringConvertible", "inFocusDisplayType"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "initWithLaunchOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "kOSSettingsKeyAutoPrompt"]
+- ["Ps28CustomDebugStringConvertible", "onOSSubscriptionChanged"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "promptForPushNotifications"]
+- !private ["Ps28CustomDebugStringConvertible", "subscribed"]
+- !private ["Ps28CustomDebugStringConvertible", "to"]
+- !private ["Ps28CustomDebugStringConvertible", "userId"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "FirebaseApp"]
+- !private ["Ps23CustomStringConvertible", "OSNotificationDisplayType"]
+- !private ["Ps23CustomStringConvertible", "OneSignal"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "add"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -109,10 +178,24 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - !private ["Ps23CustomStringConvertible", "configure"]
+- !private ["Ps23CustomStringConvertible", "from"]
+- !private ["Ps23CustomStringConvertible", "inFocusDisplayType"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "initWithLaunchOptions"]
+- !private ["Ps23CustomStringConvertible", "kOSSettingsKeyAutoPrompt"]
+- ["Ps23CustomStringConvertible", "onOSSubscriptionChanged"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "promptForPushNotifications"]
+- !private ["Ps23CustomStringConvertible", "subscribed"]
+- !private ["Ps23CustomStringConvertible", "to"]
+- !private ["Ps23CustomStringConvertible", "userId"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "FirebaseApp"]
+- !private ["Ps9Equatable", "OSNotificationDisplayType"]
+- !private ["Ps9Equatable", "OneSignal"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "add"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -126,11 +209,30 @@ depends-member:
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
 - !private ["Ps9Equatable", "configure"]
+- !private ["Ps9Equatable", "from"]
+- !private ["Ps9Equatable", "inFocusDisplayType"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "initWithLaunchOptions"]
+- !private ["Ps9Equatable", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps9Equatable", "notification"]
+- ["Ps9Equatable", "onOSSubscriptionChanged"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "promptForPushNotifications"]
+- !private ["Ps9Equatable", "subscribed"]
+- !private ["Ps9Equatable", "to"]
+- !private ["Ps9Equatable", "userId"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["CSo11FirebaseApp", "configure"]
 - !private ["Ps8Hashable", "FirebaseApp"]
+- !private ["Ps8Hashable", "OSNotificationDisplayType"]
+- !private ["Ps8Hashable", "OneSignal"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "add"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -144,14 +246,36 @@ depends-member:
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
 - !private ["Ps8Hashable", "configure"]
+- !private ["Ps8Hashable", "from"]
+- !private ["Ps8Hashable", "inFocusDisplayType"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "initWithLaunchOptions"]
+- !private ["Ps8Hashable", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps8Hashable", "notification"]
+- ["Ps8Hashable", "onOSSubscriptionChanged"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "promptForPushNotifications"]
+- !private ["Ps8Hashable", "subscribed"]
+- !private ["Ps8Hashable", "to"]
+- !private ["Ps8Hashable", "userId"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "FirebaseApp"]
+- !private ["CSo8NSObject", "OSNotificationDisplayType"]
+- !private ["CSo8NSObject", "OSSubscriptionObserver"]
+- ["CSo8NSObject", "OSSubscriptionStateChanges"]
+- !private ["CSo8NSObject", "OneSignal"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - ["CSo8NSObject", "UIWindow"]
+- !private ["CSo8NSObject", "add"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -165,9 +289,22 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - !private ["CSo8NSObject", "configure"]
+- !private ["CSo8NSObject", "from"]
+- !private ["CSo8NSObject", "inFocusDisplayType"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "initWithLaunchOptions"]
+- !private ["CSo8NSObject", "kOSSettingsKeyAutoPrompt"]
+- ["CSo8NSObject", "onOSSubscriptionChanged"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "promptForPushNotifications"]
+- !private ["CSo8NSObject", "subscribed"]
+- !private ["CSo8NSObject", "to"]
+- !private ["CSo8NSObject", "userId"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "FirebaseApp"]
+- !private ["PSo16NSObjectProtocol", "OSNotificationDisplayType"]
+- !private ["PSo16NSObjectProtocol", "OneSignal"]
+- !private ["PSo16NSObjectProtocol", "add"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -181,10 +318,57 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - !private ["PSo16NSObjectProtocol", "configure"]
+- !private ["PSo16NSObjectProtocol", "from"]
+- !private ["PSo16NSObjectProtocol", "inFocusDisplayType"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "initWithLaunchOptions"]
+- !private ["PSo16NSObjectProtocol", "kOSSettingsKeyAutoPrompt"]
+- ["PSo16NSObjectProtocol", "onOSSubscriptionChanged"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "promptForPushNotifications"]
+- !private ["PSo16NSObjectProtocol", "subscribed"]
+- !private ["PSo16NSObjectProtocol", "to"]
+- !private ["PSo16NSObjectProtocol", "userId"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["OSC25OSNotificationDisplayType", "notification"]
+- !private ["PSo22OSSubscriptionObserver", "FirebaseApp"]
+- !private ["PSo22OSSubscriptionObserver", "OSNotificationDisplayType"]
+- !private ["PSo22OSSubscriptionObserver", "OneSignal"]
+- ["PSo22OSSubscriptionObserver", "application"]
+- ["PSo22OSSubscriptionObserver", "applicationDidBecomeActive"]
+- ["PSo22OSSubscriptionObserver", "applicationDidEnterBackground"]
+- ["PSo22OSSubscriptionObserver", "applicationDidFinishLaunching"]
+- ["PSo22OSSubscriptionObserver", "applicationDidReceiveMemoryWarning"]
+- ["PSo22OSSubscriptionObserver", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo22OSSubscriptionObserver", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo22OSSubscriptionObserver", "applicationShouldRequestHealthAuthorization"]
+- ["PSo22OSSubscriptionObserver", "applicationSignificantTimeChange"]
+- ["PSo22OSSubscriptionObserver", "applicationWillEnterForeground"]
+- ["PSo22OSSubscriptionObserver", "applicationWillResignActive"]
+- ["PSo22OSSubscriptionObserver", "applicationWillTerminate"]
+- !private ["PSo22OSSubscriptionObserver", "kOSSettingsKeyAutoPrompt"]
+- ["PSo22OSSubscriptionObserver", "onOSSubscriptionChanged"]
+- !private ["PSo22OSSubscriptionObserver", "print"]
+- ["PSo22OSSubscriptionObserver", "window"]
+- ["PSo22OSSubscriptionObserver", ""]
+- !private ["CSo19OSSubscriptionState", "subscribed"]
+- !private ["CSo19OSSubscriptionState", "userId"]
+- !private ["CSo26OSSubscriptionStateChanges", "from"]
+- !private ["CSo26OSSubscriptionStateChanges", "to"]
+- !private ["CSo9OneSignal", "add"]
+- !private ["CSo9OneSignal", "inFocusDisplayType"]
+- !private ["CSo9OneSignal", "initWithLaunchOptions"]
+- !private ["CSo9OneSignal", "promptForPushNotifications"]
+- !private ["Ps16RawRepresentable", "notification"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo21UIApplicationDelegate", "FirebaseApp"]
+- !private ["PSo21UIApplicationDelegate", "OSNotificationDisplayType"]
+- !private ["PSo21UIApplicationDelegate", "OneSignal"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -197,10 +381,17 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "kOSSettingsKeyAutoPrompt"]
+- ["PSo21UIApplicationDelegate", "onOSSubscriptionChanged"]
+- !private ["PSo21UIApplicationDelegate", "print"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FirebaseApp"]
+- !private ["CSo11UIResponder", "OSNotificationDisplayType"]
+- !private ["CSo11UIResponder", "OSSubscriptionObserver"]
+- ["CSo11UIResponder", "OSSubscriptionStateChanges"]
+- !private ["CSo11UIResponder", "OneSignal"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -217,9 +408,14 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "kOSSettingsKeyAutoPrompt"]
+- ["CSo11UIResponder", "onOSSubscriptionChanged"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - !private ["PSo30UIResponderStandardEditActions", "FirebaseApp"]
+- !private ["PSo30UIResponderStandardEditActions", "OSNotificationDisplayType"]
+- !private ["PSo30UIResponderStandardEditActions", "OneSignal"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
@@ -233,9 +429,23 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "kOSSettingsKeyAutoPrompt"]
+- ["PSo30UIResponderStandardEditActions", "onOSSubscriptionChanged"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "FirebaseApp"]
+- !private ["Ps9_Hashable", "OSNotificationDisplayType"]
+- !private ["Ps9_Hashable", "OneSignal"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "add"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
 - ["Ps9_Hashable", "applicationDidEnterBackground"]
@@ -249,24 +459,69 @@ depends-member:
 - ["Ps9_Hashable", "applicationWillResignActive"]
 - ["Ps9_Hashable", "applicationWillTerminate"]
 - !private ["Ps9_Hashable", "configure"]
+- !private ["Ps9_Hashable", "from"]
+- !private ["Ps9_Hashable", "inFocusDisplayType"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "initWithLaunchOptions"]
+- !private ["Ps9_Hashable", "kOSSettingsKeyAutoPrompt"]
+- !private ["Ps9_Hashable", "notification"]
+- ["Ps9_Hashable", "onOSSubscriptionChanged"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "promptForPushNotifications"]
+- !private ["Ps9_Hashable", "subscribed"]
+- !private ["Ps9_Hashable", "to"]
+- !private ["Ps9_Hashable", "userId"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "C4Lyne11AppDelegate"
+- !private "Sb"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "CSo11FirebaseApp"
 - "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "OSC25OSNotificationDisplayType"
+- "PSo22OSSubscriptionObserver"
+- !private "CSo19OSSubscriptionState"
+- !private "CSo26OSSubscriptionStateChanges"
+- !private "CSo9OneSignal"
+- !private "Ps16RawRepresentable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
@@ -274,9 +529,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UserNotifications.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -291,6 +548,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
@@ -305,6 +563,7 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Headers/OneSignal.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
@@ -331,6 +590,7 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -344,5 +604,7 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "3ced463a6a08738d2e1a137498697d3e"
+- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
+interface-hash: "236a613c7e811945927c325bf3526080"

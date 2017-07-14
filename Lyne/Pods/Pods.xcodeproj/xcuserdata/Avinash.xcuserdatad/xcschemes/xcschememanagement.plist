@@ -19,12 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LyneTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-LyneUITests.xcscheme</key>
+		<key>Pods-OneSignalNotificationServiceExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,12 +37,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BC934AF7EA2FB4553D4DE748A9E33A8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5EDAED8B2933E03866D9E666E157D9D2</key>
+		<key>4C91F21CD6F5C81D14D962A1E78C8445</key>
 		<dict>
 			<key>primary</key>
 			<true/>

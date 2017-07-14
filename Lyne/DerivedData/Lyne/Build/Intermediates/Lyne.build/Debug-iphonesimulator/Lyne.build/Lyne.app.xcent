@@ -4,9 +4,7 @@
 <dict>
 	<key>application-identifier</key>
 	<string>3V593WX43L.Edcast.Lyne</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>3V593WX43L.Edcast.Lyne</string>
-	</array>
+	<key>aps-environment</key>
+	<string>development</string>
 </dict>
 </plist>
