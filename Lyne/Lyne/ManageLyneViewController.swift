@@ -24,6 +24,9 @@ class ManageLyneViewController: UIViewController {
     var timerCounter = 20
     weak var timer : Timer?
     
+    var playerid = ""
+    var name = ""
+    
     var ref : DatabaseReference!
     var cu = User.currentUser
 
@@ -78,6 +81,16 @@ class ManageLyneViewController: UIViewController {
             self.cu.lyneCreated?.updateValues(dict: postDict)
             self.updateView()
         })
+    }
+    
+    func getUserData(uid: String) {
+        _ = ref.child("users").child(uid).observe(DataEventType.value, with: {(snapshot) in
+            let value = snapshot.value as? [String: AnyObject]
+            playerid = value["playerID"]
+            name = value["name"]
+        })
+        
+        
     }
     
     

@@ -32,6 +32,9 @@
 		E190E3D71F16CE2B004B4E44 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D61F16CE2B004B4E44 /* checkmark.png */; };
 		E190E3DD1F16D6DB004B4E44 /* greencheck.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3DC1F16D6DB004B4E44 /* greencheck.png */; };
 		E190E3DF1F16ED83004B4E44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190E3DE1F16ED83004B4E44 /* User.swift */; };
+		E1ADD6AE1F1950CE00D94F1E /* Blue_BKG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1ADD6AD1F1950CE00D94F1E /* Blue_BKG.jpg */; };
+		E1ADD6B01F1951FF00D94F1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADD6AF1F1951FF00D94F1E /* LoginViewController.swift */; };
+		E1ADD6B41F195AF200D94F1E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ADD6B31F195AF200D94F1E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,9 @@
 		E190E3D61F16CE2B004B4E44 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		E190E3DC1F16D6DB004B4E44 /* greencheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greencheck.png; sourceTree = "<group>"; };
 		E190E3DE1F16ED83004B4E44 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1ADD6AD1F1950CE00D94F1E /* Blue_BKG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blue_BKG.jpg; sourceTree = "<group>"; };
+		E1ADD6AF1F1951FF00D94F1E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E1ADD6B31F195AF200D94F1E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,21 +196,16 @@
 				E11AC0371F12D410003CAF69 /* AppDelegate.swift */,
 				E12A9F531F15689B00509D39 /* Lyne.swift */,
 				E190E3DE1F16ED83004B4E44 /* User.swift */,
+				E1ADD6B31F195AF200D94F1E /* SignUpViewController.swift */,
+				E1ADD6AF1F1951FF00D94F1E /* LoginViewController.swift */,
 				E11AC0651F12D459003CAF69 /* JoinViewController.swift */,
 				E12A9F551F15AEFC00509D39 /* CreateViewController.swift */,
 				E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */,
 				E11AC03B1F12D410003CAF69 /* Main.storyboard */,
+				E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */,
 				E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */,
 				E11AC03E1F12D410003CAF69 /* Assets.xcassets */,
-				E190E3D41F16CC42004B4E44 /* add.png */,
-				E140C43F1F12E52F000094A1 /* annotation.png */,
-				E12189AB1F1348CE007946F5 /* search.png */,
-				E12189AD1F1348EE007946F5 /* create.png */,
-				E190E3D01F16C036004B4E44 /* settings.png */,
-				E190E3D21F16C83C004B4E44 /* right-arrow.png */,
-				E190E3D61F16CE2B004B4E44 /* checkmark.png */,
-				E190E3DC1F16D6DB004B4E44 /* greencheck.png */,
-				E11AC0401F12D410003CAF69 /* LaunchScreen.storyboard */,
+				E1ADD6B21F19521000D94F1E /* Images */,
 				E11AC0431F12D410003CAF69 /* Info.plist */,
 				E12A9F511F15642000509D39 /* GoogleService-Info.plist */,
 			);
@@ -236,6 +237,22 @@
 				E13C6B991F184C1000311376 /* Info.plist */,
 			);
 			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		E1ADD6B21F19521000D94F1E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E190E3D41F16CC42004B4E44 /* add.png */,
+				E140C43F1F12E52F000094A1 /* annotation.png */,
+				E12189AB1F1348CE007946F5 /* search.png */,
+				E1ADD6AD1F1950CE00D94F1E /* Blue_BKG.jpg */,
+				E12189AD1F1348EE007946F5 /* create.png */,
+				E190E3D01F16C036004B4E44 /* settings.png */,
+				E190E3D21F16C83C004B4E44 /* right-arrow.png */,
+				E190E3D61F16CE2B004B4E44 /* checkmark.png */,
+				E190E3DC1F16D6DB004B4E44 /* greencheck.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		E521BDB71A9566FA73E233A7 /* Pods */ = {
@@ -404,6 +421,7 @@
 				E12189AE1F1348EE007946F5 /* create.png in Resources */,
 				E190E3DD1F16D6DB004B4E44 /* greencheck.png in Resources */,
 				E190E3D31F16C83C004B4E44 /* right-arrow.png in Resources */,
+				E1ADD6AE1F1950CE00D94F1E /* Blue_BKG.jpg in Resources */,
 				E190E3D51F16CC42004B4E44 /* add.png in Resources */,
 				E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */,
 				E190E3D11F16C036004B4E44 /* settings.png in Resources */,
@@ -522,7 +540,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1ADD6B01F1951FF00D94F1E /* LoginViewController.swift in Sources */,
 				E190E3CD1F16BA61004B4E44 /* ManageLyneViewController.swift in Sources */,
+				E1ADD6B41F195AF200D94F1E /* SignUpViewController.swift in Sources */,
 				E12A9F561F15AEFC00509D39 /* CreateViewController.swift in Sources */,
 				E190E3DF1F16ED83004B4E44 /* User.swift in Sources */,
 				E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */,

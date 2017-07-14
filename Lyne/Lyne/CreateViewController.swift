@@ -43,7 +43,7 @@ class CreateViewController: UIViewController {
                     return
             }
             
-            let lyne = Lyne(name: self.lyneName.text!, num: 3, pos: 1, loc: CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), id: self.lyneID.text!, users: ["start","1234567890", "1231231234", "4084084088"])
+            let lyne = Lyne(name: self.lyneName.text!, num: 3, pos: 1, loc: CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), id: self.lyneID.text!, users: ["start","Taei6HH6UuNaa7j5LLOsEnsbdJt2", "Taei6HH6UuNaa7j5LLOsEnsbdJt2", "Taei6HH6UuNaa7j5LLOsEnsbdJt2"])
             
                 User.currentUser.createLyne(lyne: lyne)
             

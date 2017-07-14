@@ -11,6 +11,8 @@ import Firebase
 
 class User {
     var name : String?
+    var UID : String?
+    var playerID : String?
     var lyneJoined : Lyne?
     var lyneCreated : Lyne?
     
@@ -19,8 +21,21 @@ class User {
     private init() {
     }
     
-    func setName(name: String) {
-        self.name = name
+    func setUpUser() {
+        let userID = Auth.auth().currentUser?.uid
+        
+        print(self.name)
+        
+        var ref : DatabaseReference = Database.database().reference()
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            self.name = value?["name"] as! String
+            self.playerID = value?["playerID"] as! String
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     

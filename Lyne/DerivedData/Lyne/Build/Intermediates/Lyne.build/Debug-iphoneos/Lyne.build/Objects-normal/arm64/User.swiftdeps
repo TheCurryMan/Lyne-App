@@ -8,64 +8,115 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- !private "Auth"
 - "CastingPrecedence"
 - !private "Database"
 - !private "DatabaseReference"
 - !private "Dictionary"
 - "Lyne"
+- !private "NSDictionary"
 - "String"
 - !private "StringLiteralType"
 - "User"
+- !private "print"
 depends-member:
+- !private ["Ps9AnyObject", "Auth"]
 - !private ["Ps9AnyObject", "Database"]
 - ["Ps9AnyObject", "User"]
+- !private ["Ps9AnyObject", "auth"]
 - !private ["Ps9AnyObject", "child"]
+- !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "database"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "lyneCreated"]
 - !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "observeSingleEvent"]
+- !private ["Ps9AnyObject", "playerID"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reference"]
 - !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "uid"]
+- !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", ""]
+- !private ["CSo4Auth", "auth"]
+- !private ["CSo4Auth", "currentUser"]
 - !private ["VSC22CLLocationCoordinate2D", "latitude"]
 - !private ["VSC22CLLocationCoordinate2D", "longitude"]
+- !private ["Ps7CVarArg", "auth"]
 - !private ["Ps7CVarArg", "child"]
+- !private ["Ps7CVarArg", "currentUser"]
 - !private ["Ps7CVarArg", "database"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "observeSingleEvent"]
 - !private ["Ps7CVarArg", "reference"]
 - !private ["Ps7CVarArg", "setValue"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "uid"]
+- !private ["Ps7CVarArg", "value"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
 - !private ["Ps28CustomDebugStringConvertible", "child"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "observeSingleEvent"]
 - !private ["Ps28CustomDebugStringConvertible", "reference"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "auth"]
 - !private ["Ps23CustomStringConvertible", "child"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "observeSingleEvent"]
 - !private ["Ps23CustomStringConvertible", "reference"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["OSC13DataEventType", "value"]
+- !private ["CSo12DataSnapshot", "value"]
 - !private ["CSo8Database", "database"]
 - !private ["CSo8Database", "reference"]
 - !private ["CSo13DatabaseQuery", "child"]
+- !private ["CSo13DatabaseQuery", "observeSingleEvent"]
 - !private ["CSo13DatabaseQuery", "setValue"]
 - !private ["CSo17DatabaseReference", "child"]
+- !private ["CSo17DatabaseReference", "observeSingleEvent"]
 - !private ["CSo17DatabaseReference", "setValue"]
+- !private ["Ps9Equatable", "auth"]
 - !private ["Ps9Equatable", "child"]
+- !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "observeSingleEvent"]
 - !private ["Ps9Equatable", "reference"]
 - !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "uid"]
+- !private ["Ps9Equatable", "value"]
+- !private ["Ps5Error", "localizedDescription"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "auth"]
 - !private ["Ps8Hashable", "child"]
+- !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "observeSingleEvent"]
 - !private ["Ps8Hashable", "reference"]
 - !private ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "uid"]
+- !private ["Ps8Hashable", "value"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["V4Lyne4Lyne", "id"]
 - !private ["V4Lyne4Lyne", "loc"]
@@ -75,26 +126,49 @@ depends-member:
 - !private ["V4Lyne4Lyne", "users"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "subscript"]
+- !private ["CSo12NSDictionary", "subscript"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "subscript"]
+- !private ["CSo8NSObject", "auth"]
 - !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "database"]
+- !private ["CSo8NSObject", "observeSingleEvent"]
 - !private ["CSo8NSObject", "reference"]
 - !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "uid"]
+- !private ["CSo8NSObject", "value"]
+- !private ["PSo16NSObjectProtocol", "auth"]
 - !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
 - !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "observeSingleEvent"]
 - !private ["PSo16NSObjectProtocol", "reference"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["CSo8NSString", "init"]
+- !private ["Ps16RawRepresentable", "value"]
+- !private ["Ps8Sequence", "subscript"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["C4Lyne4User", "Auth"]
 - !private ["C4Lyne4User", "Database"]
 - !private ["C4Lyne4User", "DatabaseReference"]
 - ["C4Lyne4User", "Lyne"]
+- !private ["C4Lyne4User", "NSDictionary"]
 - ["C4Lyne4User", "String"]
+- ["C4Lyne4User", "UID"]
 - ["C4Lyne4User", "User"]
 - ["C4Lyne4User", "createLyne"]
 - ["C4Lyne4User", "currentUser"]
@@ -103,23 +177,34 @@ depends-member:
 - ["C4Lyne4User", "lyneCreated"]
 - ["C4Lyne4User", "lyneJoined"]
 - ["C4Lyne4User", "name"]
-- ["C4Lyne4User", "setName"]
+- ["C4Lyne4User", "playerID"]
+- !private ["C4Lyne4User", "print"]
+- ["C4Lyne4User", "setUpUser"]
+- !private ["CSo4User", "uid"]
+- !private ["PSo8UserInfo", "uid"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "auth"]
 - !private ["Ps9_Hashable", "child"]
+- !private ["Ps9_Hashable", "currentUser"]
 - !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "observeSingleEvent"]
 - !private ["Ps9_Hashable", "reference"]
 - !private ["Ps9_Hashable", "setValue"]
+- !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps9_Hashable", "uid"]
+- !private ["Ps9_Hashable", "value"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "latitude"]
 - !private ["Ps21_ObjectiveCBridgeable", "longitude"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "CSo4Auth"
 - !private "VSC22CLLocationCoordinate2D"
 - !private "Ps7CVarArg"
 - !private "Ps10Comparable"
@@ -127,10 +212,14 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
+- !private "OSC13DataEventType"
+- !private "CSo12DataSnapshot"
 - !private "CSo8Database"
 - !private "CSo13DatabaseQuery"
 - !private "CSo17DatabaseReference"
 - !private "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -140,15 +229,21 @@ depends-nominal:
 - !private "Ps10MirrorPath"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
 - !private "PSo16NSMutableCopying"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "C4Lyne4User"
+- !private "CSo4User"
+- !private "PSo8UserInfo"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
@@ -184,7 +279,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
@@ -226,7 +320,6 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -242,5 +335,4 @@ depends-external:
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/Avinash/Documents/Code/Lyne-App/Lyne/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/Avinash/Documents/Code/Lyne-App/Lyne/DerivedData/Lyne/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
-interface-hash: "dade5e62283f35cd329829b89d48531d"
+interface-hash: "2ae21c418f92ca7a777cc7e637b5bb6d"

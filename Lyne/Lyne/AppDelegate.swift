@@ -32,12 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver {
         
         // Recommend moving the below line to prompt for push after informing the user about
         //   how your app will use them.
+        
+        promptPushNotification()
+        
+        return true
+    }
+    
+    func promptPushNotification() {
         OneSignal.promptForPushNotifications(userResponse: { accepted in
             print("User accepted notifications: \(accepted)")
             OneSignal.add(self as OSSubscriptionObserver)
         })
-        
-        return true
     }
     
     func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges!) {
@@ -49,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver {
         //The player id is inside stateChanges. But be careful, this value can be nil if the user has not granted you permission to send notifications.
         if let playerId = stateChanges.to.userId {
             print("Current playerId \(playerId)")
+            User.currentUser
         }
     }
     

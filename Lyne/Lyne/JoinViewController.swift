@@ -39,6 +39,7 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         locateMe()
         tableView.register( UINib(nibName: "LyneTableViewCell", bundle:nil), forCellReuseIdentifier: "join")
         getFirebaseData()
+        
     }
     
     override func didReceiveMemoryWarning() {
