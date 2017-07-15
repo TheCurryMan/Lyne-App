@@ -23,9 +23,9 @@ class JoinedLyneViewController: UIViewController {
 
         ref.child("lynes").child(User.currentUser.lyneJoinedID!).observe(.value, with: {(snapshot) in
             let data = snapshot.value as! [String: AnyObject]
-            self.positionLabel.text = data["pos"] as? String
-            self.numLabel.text = data["num"] as? String
-            self.etaLabel.text = data["num"] as? String
+            self.positionLabel.text = String(data["pos"] as! Int)
+            self.numLabel.text = String(data["num"] as! Int)
+            self.etaLabel.text = String(data["num"] as! Int)
             self.currentPositionLabel.text = User.currentUser.lyneJoinedPos!
         
         })
