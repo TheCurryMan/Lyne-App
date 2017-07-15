@@ -7,13 +7,28 @@
 //
 
 import UIKit
+import Firebase
 
 class JoinedLyneViewController: UIViewController {
 
+    @IBOutlet weak var currentPositionLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
+    @IBOutlet weak var numLabel: UILabel!
+    @IBOutlet weak var etaLabel: UILabel!
+    
+    let ref : DatabaseReference = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ref.child("lynes").child(User.currentUser.lyneJoinedID!).observe(.value, with: {(snapshot) in
+            let data = snapshot.value as! [String: AnyObject]
+            self.positionLabel.text = data["pos"] as? String
+            self.numLabel.text = data["num"] as? String
+            self.etaLabel.text = data["num"] as? String
+            self.currentPositionLabel.text = User.currentUser.lyneJoinedPos!
+        
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +37,9 @@ class JoinedLyneViewController: UIViewController {
     }
     
 
+    @IBAction func leaveLyne(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -132,6 +132,8 @@ class ManageLyneViewController: UIViewController {
         timerCounter = 20
         timerLabel.text = "00:\(timerCounter)"
         
+        self.playerid = ""
+        
         self.checkPressed = false
         checkmarkButton.setImage(UIImage(named: "checkmark.png"), for: UIControlState.normal)
         

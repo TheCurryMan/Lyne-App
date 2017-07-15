@@ -13,7 +13,8 @@ class User {
     var name : String?
     var UID : String?
     var playerID : String?
-    var lyneJoined : Lyne?
+    var lyneJoinedID : String?
+    var lyneJoinedPos : String?
     var lyneCreated : Lyne?
     
     static var currentUser = User()
@@ -22,13 +23,16 @@ class User {
     }
     
     func addToLyne(id: String){
-        let ref : DatabaseReference = Database.database().reference()
+        self.lyneJoinedID = id
         ref.child("lynes").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
-            var users = value?["users"] as! [String]
-            users.append(User.currentUser.UID!)
-            ref.child("lynes").child(id).setValue(["users": users])
+            var users = value?["users"] as? [String]
+            let num = value?["num"] as! Int
+            let pos = value?["pos"] as! Int
+            self.lyneJoinedPos = String(num + pos)
+            users!.append(User.currentUser.UID!)
+            self.ref.child("lynes").child(id).updateChildValues(["users": users!, "num":(num+1)])
             
             
         }) { (error) in
@@ -37,10 +41,10 @@ class User {
     }
     
     func setUpUser() {
-        let userID = Auth.auth().currentUser?.uid
+        UID = Auth.auth().currentUser?.uid
         
         
-        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("users").child(UID!).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
             self.name = value?["name"] as? String
