@@ -112,6 +112,9 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func signup(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
      // MARK: - Navigation
      

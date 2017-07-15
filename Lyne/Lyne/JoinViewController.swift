@@ -56,8 +56,12 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             for lyne in postDict {
                 let pair = lyne.value as! [String:AnyObject]
                 let coords = CLLocationCoordinate2DMake(pair["lat"] as! CLLocationDegrees, pair["long"] as! CLLocationDegrees)
-                let newLyne = Lyne(name: pair["name"] as? String, num: pair["num"] as? Int, pos: pair["pos"] as? Int, loc: coords, id: lyne.key, users: pair["users"] as! [String])
-                self.lynes.append(newLyne)
+                
+                if self.getDistanceFromCurrentLocation(otherLoc: coords) < 100 {
+                    let newLyne = Lyne(name: pair["name"] as? String, num: pair["num"] as? Int, pos: pair["pos"] as? Int, loc: coords, id: lyne.key, users: pair["users"] as! [String])
+                    self.lynes.append(newLyne)
+                }
+               
             }
             
             self.tableView.reloadData()
