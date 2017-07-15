@@ -17,21 +17,34 @@ class User {
     var lyneCreated : Lyne?
     
     static var currentUser = User()
-    
+    let ref : DatabaseReference = Database.database().reference()
     private init() {
+    }
+    
+    func addToLyne(id: String){
+        let ref : DatabaseReference = Database.database().reference()
+        ref.child("lynes").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            var users = value?["users"] as! [String]
+            users.append(User.currentUser.UID!)
+            ref.child("lynes").child(id).setValue(["users": users])
+            
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     func setUpUser() {
         let userID = Auth.auth().currentUser?.uid
         
-        print(self.name)
         
-        var ref : DatabaseReference = Database.database().reference()
         ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
-            self.name = value?["name"] as! String
-            self.playerID = value?["playerID"] as! String
+            self.name = value?["name"] as? String
+            self.playerID = value?["playerID"] as? String
             
         }) { (error) in
             print(error.localizedDescription)

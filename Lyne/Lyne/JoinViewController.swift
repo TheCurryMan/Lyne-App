@@ -17,9 +17,10 @@ class JoinTableViewCell: UITableViewCell {
     @IBOutlet weak var lynePositionLabel: UILabel!
     @IBOutlet weak var lyneDistanceLabel: UILabel!
     
+    @IBOutlet weak var lyneID: UILabel!
 }
 
-class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource {
+class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -130,8 +131,15 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         cell.lyneNameLabel.text = currentLyne.name
         cell.lynePeopleLabel.text = "There are \(currentLyne.num!) people in the lyne"
         cell.lynePositionLabel.text = "#\(currentLyne.pos!)"
-        
+        cell.lyneID.text = "\(currentLyne.id)"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! JoinTableViewCell
+        ref.child("users").child(User.currentUser.UID!).setValue(["lyneJoined":cell.lyneID.text])
+        User.currentUser.addToLyne(id: cell.lyneID.text!)
+        performSegue(withIdentifier: "joined", sender: self)
     }
     
     func getDistanceFromCurrentLocation(otherLoc: CLLocationCoordinate2D) -> CLLocationDistance

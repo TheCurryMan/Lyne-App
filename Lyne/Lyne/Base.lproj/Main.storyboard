@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17A264c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ljz-Pd-foG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ljz-Pd-foG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -346,6 +346,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="52b-4m-RMU" id="WBq-Zo-61a"/>
+                                    <outlet property="delegate" destination="52b-4m-RMU" id="E5q-Wp-jI1"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -365,11 +366,116 @@
                     <connections>
                         <outlet property="mapView" destination="pss-YO-CAh" id="RPz-fd-7px"/>
                         <outlet property="tableView" destination="HKx-Lb-d2f" id="ovD-mk-emg"/>
+                        <segue destination="DCM-RZ-hjd" kind="presentation" identifier="joined" id="NZr-OY-QXe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TpW-Dz-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95.200000000000003" y="-649.02548725637189"/>
+            <point key="canvasLocation" x="-95" y="-649"/>
+        </scene>
+        <!--Joined Lyne View Controller-->
+        <scene sceneID="jyR-Vz-S2S">
+            <objects>
+                <viewController id="DCM-RZ-hjd" customClass="JoinedLyneViewController" customModule="Lyne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKY-kK-tq6"/>
+                        <viewControllerLayoutGuide type="bottom" id="adI-J7-UoM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Cu-oS-Kq7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPv-jN-fYZ">
+                                <rect key="frame" x="167" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="u8z-jb-fhd"/>
+                                    <constraint firstAttribute="height" constant="40" id="yKe-A2-eob"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cross-symbol.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Position? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SJ-UE-yxb">
+                                <rect key="frame" x="16" y="20" width="250" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="wfg-xG-jnc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of people in Lyne?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nij-Fv-CDb">
+                                <rect key="frame" x="16" y="174" width="262" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="fXV-sI-yTh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2j-h4-SA5">
+                                <rect key="frame" x="16" y="219" width="343" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="pYn-e8-heY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AR-Qi-fsd">
+                                <rect key="frame" x="16" y="65" width="343" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="gUI-Zs-XJP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Time of Arrival? (Min.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21J-hG-i3G">
+                                <rect key="frame" x="16" y="328" width="329" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="ygB-5h-09w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNn-6J-nQC">
+                                <rect key="frame" x="16" y="373" width="343" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="rZX-on-wH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="21J-hG-i3G" secondAttribute="trailing" constant="14" id="04m-Ll-y2u"/>
+                            <constraint firstItem="nij-Fv-CDb" firstAttribute="top" secondItem="1AR-Qi-fsd" secondAttribute="bottom" constant="8" symbolic="YES" id="6c8-et-uJa"/>
+                            <constraint firstAttribute="bottom" secondItem="VPv-jN-fYZ" secondAttribute="bottom" constant="20" symbolic="YES" id="Bin-zc-PKx"/>
+                            <constraint firstItem="J2j-h4-SA5" firstAttribute="leading" secondItem="21J-hG-i3G" secondAttribute="leading" id="KwV-uA-owF"/>
+                            <constraint firstItem="1AR-Qi-fsd" firstAttribute="top" secondItem="4SJ-UE-yxb" secondAttribute="bottom" constant="8" symbolic="YES" id="LwH-XK-CDx"/>
+                            <constraint firstItem="21J-hG-i3G" firstAttribute="leading" secondItem="FNn-6J-nQC" secondAttribute="leading" id="P2S-FF-Ych"/>
+                            <constraint firstItem="1AR-Qi-fsd" firstAttribute="leading" secondItem="nij-Fv-CDb" secondAttribute="leading" id="Pas-e4-bPu"/>
+                            <constraint firstItem="nij-Fv-CDb" firstAttribute="leading" secondItem="J2j-h4-SA5" secondAttribute="leading" id="VsE-P3-4jB"/>
+                            <constraint firstItem="4SJ-UE-yxb" firstAttribute="top" secondItem="wKY-kK-tq6" secondAttribute="bottom" id="WTp-iv-csq"/>
+                            <constraint firstItem="FNn-6J-nQC" firstAttribute="centerX" secondItem="VPv-jN-fYZ" secondAttribute="centerX" id="Xgb-hb-rHt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4SJ-UE-yxb" secondAttribute="trailing" constant="93" id="d81-Ix-Tog"/>
+                            <constraint firstItem="1AR-Qi-fsd" firstAttribute="trailing" secondItem="6Cu-oS-Kq7" secondAttribute="trailingMargin" id="eVu-uH-iBu"/>
+                            <constraint firstItem="J2j-h4-SA5" firstAttribute="top" secondItem="nij-Fv-CDb" secondAttribute="bottom" constant="8" symbolic="YES" id="jY7-Bk-d0g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nij-Fv-CDb" secondAttribute="trailing" constant="81" id="jeE-73-c2G"/>
+                            <constraint firstItem="4SJ-UE-yxb" firstAttribute="leading" secondItem="1AR-Qi-fsd" secondAttribute="leading" id="k27-de-mlD"/>
+                            <constraint firstItem="21J-hG-i3G" firstAttribute="top" secondItem="J2j-h4-SA5" secondAttribute="bottom" constant="8" symbolic="YES" id="mxC-iC-uWu"/>
+                            <constraint firstItem="J2j-h4-SA5" firstAttribute="trailing" secondItem="FNn-6J-nQC" secondAttribute="trailing" id="oHO-OW-cZr"/>
+                            <constraint firstItem="1AR-Qi-fsd" firstAttribute="trailing" secondItem="J2j-h4-SA5" secondAttribute="trailing" id="oyL-JP-CLg"/>
+                            <constraint firstItem="4SJ-UE-yxb" firstAttribute="leading" secondItem="6Cu-oS-Kq7" secondAttribute="leadingMargin" id="raB-l7-x0x"/>
+                            <constraint firstItem="FNn-6J-nQC" firstAttribute="top" secondItem="21J-hG-i3G" secondAttribute="bottom" constant="8" symbolic="YES" id="slb-UA-ZJw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cI6-UC-rbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="-649.02548725637189"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="y04-MU-6km">
@@ -512,6 +618,7 @@
         <image name="add.png" width="128" height="128"/>
         <image name="checkmark.png" width="128" height="128"/>
         <image name="create.png" width="24" height="24"/>
+        <image name="cross-symbol.png" width="128" height="128"/>
         <image name="right-arrow.png" width="128" height="128"/>
         <image name="search.png" width="24" height="24"/>
         <image name="settings.png" width="128" height="128"/>

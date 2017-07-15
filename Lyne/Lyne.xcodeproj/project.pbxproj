@@ -25,6 +25,8 @@
 		E13C6B9C1F184C1000311376 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E13C6B951F184C1000311376 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E140C4401F12E52F000094A1 /* annotation.png in Resources */ = {isa = PBXBuildFile; fileRef = E140C43F1F12E52F000094A1 /* annotation.png */; };
 		E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */; };
+		E16F81611F1A0A7D009E4331 /* cross-symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = E16F81601F1A0A7D009E4331 /* cross-symbol.png */; };
+		E16F81661F1A0C20009E4331 /* JoinedLyneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16F81651F1A0C20009E4331 /* JoinedLyneViewController.swift */; };
 		E190E3CD1F16BA61004B4E44 /* ManageLyneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */; };
 		E190E3D11F16C036004B4E44 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D01F16C036004B4E44 /* settings.png */; };
 		E190E3D31F16C83C004B4E44 /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E190E3D21F16C83C004B4E44 /* right-arrow.png */; };
@@ -108,6 +110,8 @@
 		E13C6BA11F184CB100311376 /* Lyne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lyne.entitlements; sourceTree = "<group>"; };
 		E140C43F1F12E52F000094A1 /* annotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotation.png; sourceTree = "<group>"; };
 		E140C4411F12ED9F000094A1 /* LyneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyneTableViewCell.xib; sourceTree = "<group>"; };
+		E16F81601F1A0A7D009E4331 /* cross-symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cross-symbol.png"; path = "../../../../../../../Volumes/Avi HD/Downloads/cross-symbol.png"; sourceTree = "<group>"; };
+		E16F81651F1A0C20009E4331 /* JoinedLyneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinedLyneViewController.swift; sourceTree = "<group>"; };
 		E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageLyneViewController.swift; sourceTree = "<group>"; };
 		E190E3D01F16C036004B4E44 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		E190E3D21F16C83C004B4E44 /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				E1ADD6B31F195AF200D94F1E /* SignUpViewController.swift */,
 				E1ADD6AF1F1951FF00D94F1E /* LoginViewController.swift */,
 				E11AC0651F12D459003CAF69 /* JoinViewController.swift */,
+				E16F81651F1A0C20009E4331 /* JoinedLyneViewController.swift */,
 				E12A9F551F15AEFC00509D39 /* CreateViewController.swift */,
 				E190E3CC1F16BA61004B4E44 /* ManageLyneViewController.swift */,
 				E11AC03B1F12D410003CAF69 /* Main.storyboard */,
@@ -250,6 +255,7 @@
 				E190E3D01F16C036004B4E44 /* settings.png */,
 				E190E3D21F16C83C004B4E44 /* right-arrow.png */,
 				E190E3D61F16CE2B004B4E44 /* checkmark.png */,
+				E16F81601F1A0A7D009E4331 /* cross-symbol.png */,
 				E190E3DC1F16D6DB004B4E44 /* greencheck.png */,
 			);
 			name = Images;
@@ -359,6 +365,7 @@
 					E11AC0331F12D410003CAF69 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 3V593WX43L;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -424,6 +431,7 @@
 				E1ADD6AE1F1950CE00D94F1E /* Blue_BKG.jpg in Resources */,
 				E190E3D51F16CC42004B4E44 /* add.png in Resources */,
 				E11AC03F1F12D410003CAF69 /* Assets.xcassets in Resources */,
+				E16F81611F1A0A7D009E4331 /* cross-symbol.png in Resources */,
 				E190E3D11F16C036004B4E44 /* settings.png in Resources */,
 				E140C4421F12ED9F000094A1 /* LyneTableViewCell.xib in Resources */,
 				E11AC03D1F12D410003CAF69 /* Main.storyboard in Resources */,
@@ -545,6 +553,7 @@
 				E1ADD6B41F195AF200D94F1E /* SignUpViewController.swift in Sources */,
 				E12A9F561F15AEFC00509D39 /* CreateViewController.swift in Sources */,
 				E190E3DF1F16ED83004B4E44 /* User.swift in Sources */,
+				E16F81661F1A0C20009E4331 /* JoinedLyneViewController.swift in Sources */,
 				E11AC0661F12D459003CAF69 /* JoinViewController.swift in Sources */,
 				E11AC0381F12D410003CAF69 /* AppDelegate.swift in Sources */,
 				E12A9F541F15689B00509D39 /* Lyne.swift in Sources */,
@@ -714,6 +723,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Lyne/Lyne.entitlements;
 				DEVELOPMENT_TEAM = 3V593WX43L;
 				INFOPLIST_FILE = Lyne/Info.plist;
@@ -721,6 +731,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Edcast.Lyne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -731,6 +742,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Lyne/Lyne.entitlements;
 				DEVELOPMENT_TEAM = 3V593WX43L;
 				INFOPLIST_FILE = Lyne/Info.plist;
