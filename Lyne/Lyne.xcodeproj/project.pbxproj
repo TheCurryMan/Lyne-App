@@ -717,6 +717,7 @@
 				CODE_SIGN_ENTITLEMENTS = Lyne/Lyne.entitlements;
 				DEVELOPMENT_TEAM = 3V593WX43L;
 				INFOPLIST_FILE = Lyne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Edcast.Lyne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -733,6 +734,7 @@
 				CODE_SIGN_ENTITLEMENTS = Lyne/Lyne.entitlements;
 				DEVELOPMENT_TEAM = 3V593WX43L;
 				INFOPLIST_FILE = Lyne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Edcast.Lyne;
 				PRODUCT_NAME = "$(TARGET_NAME)";

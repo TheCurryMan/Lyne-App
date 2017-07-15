@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import SCLAlertView
+import Alamofire
 
 class ManageLyneViewController: UIViewController {
     
@@ -29,7 +30,7 @@ class ManageLyneViewController: UIViewController {
     
     var ref : DatabaseReference!
     var cu = User.currentUser
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
@@ -38,12 +39,12 @@ class ManageLyneViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     func updateView() {
         
@@ -53,7 +54,7 @@ class ManageLyneViewController: UIViewController {
             self.checkmarkButton.isHidden = true
             self.lyneCurrentUserName.isHidden = true
         } else {
-        
+            
             if !checkPressed && timer == nil {
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
                 timerLabel.textColor = UIColor.green
@@ -61,9 +62,14 @@ class ManageLyneViewController: UIViewController {
             
             self.checkmarkButton.isHidden = false
             self.lyneCurrentUserName.isHidden = false
-                
             self.lyneName.text = cu.lyneCreated!.name!
-            self.lyneCurrentUserName.text = cu.lyneCreated!.users![1]
+            
+            if ((cu.lyneCreated!.users?[1])!.characters.count) >= 25 {
+                getUserData(uid: (cu.lyneCreated!.users?[1])!)
+            } else {
+                self.lyneCurrentUserName.text = "No Phone - " + (cu.lyneCreated!.users?[1])!
+            }
+            
         }
         self.lynePosition.text = "#\(String(describing: cu.lyneCreated!.pos!))"
         if (cu.lyneCreated?.num)! == 1 {
@@ -86,11 +92,23 @@ class ManageLyneViewController: UIViewController {
     func getUserData(uid: String) {
         _ = ref.child("users").child(uid).observe(DataEventType.value, with: {(snapshot) in
             let value = snapshot.value as? [String: AnyObject]
-            playerid = value["playerID"]
-            name = value["name"]
+            if (self.playerid != value!["playerID"] as! String) {
+                self.playerid = value!["playerID"] as! String
+                self.lyneCurrentUserName.text = value!["name"] as! String
+                self.sendNotificationToFirstUser()
+            }
         })
-        
-        
+    }
+    
+    
+    func sendNotificationToFirstUser(){
+        print("making new request")
+        let url = "https://damp-atoll-26489.herokuapp.com"
+        Alamofire.request(url + "?userID=" + self.playerid + "&lyneID=" + (self.cu.lyneCreated?.id!)!).responseJSON { response in
+            if let data = response.data, let dataString = String(data: data, encoding: .utf8) {
+                print("Result: " + dataString)
+            }
+        }
     }
     
     
@@ -103,12 +121,16 @@ class ManageLyneViewController: UIViewController {
         timerLabel.text = "00:\(timerCounter)"
         timerLabel.textColor = UIColor.lightGray
     }
-
+    
     @IBAction func nextPerson(_ sender: Any) {
         
         cu.lyneCreated?.users?.remove(at: 1)
         cu.lyneCreated?.num! -= 1
         cu.lyneCreated?.pos! += 1
+        
+        timer?.invalidate()
+        timerCounter = 20
+        timerLabel.text = "00:\(timerCounter)"
         
         self.checkPressed = false
         checkmarkButton.setImage(UIImage(named: "checkmark.png"), for: UIControlState.normal)
@@ -118,7 +140,7 @@ class ManageLyneViewController: UIViewController {
         
         updateView()
     }
-
+    
     @IBAction func addPerson(_ sender: Any) {
         timer?.invalidate()
         let appearance = SCLAlertView.SCLAppearance(
@@ -127,10 +149,10 @@ class ManageLyneViewController: UIViewController {
             kButtonFont: UIFont(name: "Avenir Next", size: 16)!,
             showCloseButton: false,
             showCircularIcon: false
-
+            
         )
         let alert = SCLAlertView(appearance: appearance)
-    
+        
         let txt = alert.addTextField("Enter Name")
         alert.addButton("Done") {
             let key = txt.text!
@@ -149,9 +171,14 @@ class ManageLyneViewController: UIViewController {
     
     func updateTimer() {
         timerCounter -= 1
-        
-        timerLabel.text = "00:\(timerCounter)"
+        if timerCounter < 10 {
+            timerLabel.text = "00:0\(timerCounter)"
+        } else if timerCounter < 1 {
+            nextPerson(self)
+        } else {
+            timerLabel.text = "00:\(timerCounter)"
+        }
     }
-  
+    
     
 }

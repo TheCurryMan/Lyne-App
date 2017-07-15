@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver {
         //The player id is inside stateChanges. But be careful, this value can be nil if the user has not granted you permission to send notifications.
         if let playerId = stateChanges.to.userId {
             print("Current playerId \(playerId)")
-            User.currentUser
+          
         }
     }
     

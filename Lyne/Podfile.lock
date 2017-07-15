@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.5.0)
   - Firebase/Auth (4.0.2):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
@@ -37,6 +38,7 @@ PODS:
   - SCLAlertView (0.7.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -44,6 +46,7 @@ DEPENDENCIES:
   - SCLAlertView
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Firebase: c7ad0731eab26d18a3fc547dd048b0f7cd9c63ae
   FirebaseAnalytics: 4d7040fefc3cd8b291cde35f12cf063d7963f15d
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
@@ -55,6 +58,6 @@ SPEC CHECKSUMS:
   OneSignal: da994bcf6a2efbdceaf71e389e1d05245c562899
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
 
-PODFILE CHECKSUM: b2f88551926c2a0203bfd9389d6f06f8749cdaa7
+PODFILE CHECKSUM: e3792106fdcc7649ef36d175688237a1cf8881f1
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

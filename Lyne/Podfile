@@ -1,10 +1,9 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, ’10.3’
 
 target 'Lyne' do
 
-  use_frameworks!
-
+ use_frameworks!
   # Pods for Lyne
 
   pod 'Firebase/Core'
@@ -12,6 +11,7 @@ target 'Lyne' do
   pod 'Firebase/Database'
   pod 'SCLAlertView'
   pod 'OneSignal', '>= 2.5.2', '< 3.0'
+  pod ‘Alamofire’
 
 end
 
