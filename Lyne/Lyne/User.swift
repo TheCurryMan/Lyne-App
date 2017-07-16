@@ -40,6 +40,10 @@ class User {
         }
     }
     
+    func setUID() {
+        UID = Auth.auth().currentUser?.uid
+    }
+    
     func setUpUser() {
         UID = Auth.auth().currentUser?.uid
         

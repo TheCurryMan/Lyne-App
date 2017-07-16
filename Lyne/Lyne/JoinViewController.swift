@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import OneSignal
 import FirebaseDatabase
+import SCLAlertView
 
 class JoinTableViewCell: UITableViewCell {
     
@@ -26,6 +27,7 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noLyneLabel: UILabel!
     
     var locationManager = CLLocationManager()
     var ref: DatabaseReference!
@@ -37,11 +39,17 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        locateMe()
+        
+        if UIApplication.shared.isRegisteredForRemoteNotifications {
+            locateMe()
+            getFirebaseData()
+        } else {
+            giveWarningAboutAcceptances()
+        }
+
+        
         tableView.register( UINib(nibName: "LyneTableViewCell", bundle:nil), forCellReuseIdentifier: "join")
-        getFirebaseData()
-        promptPushNotification()
+        
         
     }
     
@@ -71,6 +79,25 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         })
     }
     
+    func giveWarningAboutAcceptances() {
+        let appearance = SCLAlertView.SCLAppearance(
+            kTitleFont: UIFont(name: "Avenir Next", size: 30)!,
+            kTextFont: UIFont(name: "Avenir Next", size: 16)!,
+            kButtonFont: UIFont(name: "Avenir Next", size: 16)!,
+            showCloseButton: false,
+            showCircularIcon: false
+            
+        )
+        let alert = SCLAlertView(appearance: appearance)
+        
+        alert.addButton("Okay") {
+            self.getFirebaseData()
+            self.promptPushNotification()
+            
+        }
+        
+        alert.showInfo("Hi!", subTitle: "Before you get started, we're going to need your location to find nearby lynes and send you push notifications when you're at the front!")
+    }
  
     @IBAction func locateMe() {
         locationManager.delegate = self
@@ -122,6 +149,11 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if lynes.count == 0 {
+            self.noLyneLabel.isHidden = false
+        } else {
+            self.noLyneLabel.isHidden = true
+        }
         return lynes.count
     }
     
@@ -172,8 +204,8 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         if let playerID = stateChanges.to.userId {
             print("Current playerId \(playerID)")
             ref.child("users").child(User.currentUser.UID!).updateChildValues(["playerID":playerID])
-            
         }
+        self.locateMe()
     }
     
 }

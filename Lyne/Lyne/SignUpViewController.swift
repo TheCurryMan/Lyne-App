@@ -27,18 +27,7 @@ class SignUpViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
-        
-        //OneSignal.idsAvailable({(_ userId, _ pushToken) in
-            //print("UserId:\(userId)")
-            //playerID = userId!
-            //newPth.child("player_id").setValue(userId)
-            //newPth.child("user_firstName").setValue("Brian")
-            
-            //if pushToken != nil {
-                //print("pushToken:\(pushToken)")
-            //}
-        //})
-        
+                
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -64,6 +53,7 @@ class SignUpViewController: UIViewController {
     @IBAction func signUp(_ sender: Any) {
         Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { (user, error) in
             if error == nil {
+                User.currentUser.setUID()
                 let ref : DatabaseReference! = Database.database().reference()
                 ref.child("users").child(user!.uid).updateChildValues(["name": self.firstNameField.text!])
                 self.performSegue(withIdentifier: "mainview", sender: self)
