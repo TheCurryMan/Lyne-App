@@ -8,11 +8,23 @@
 
 import UIKit
 import OneSignal
+import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        
 
         // Do any additional setup after loading the view.
         
@@ -28,6 +40,20 @@ class SignUpViewController: UIViewController {
         //})
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            
+            User.currentUser.setUpUser()
+            self.performSegue(withIdentifier: "mainview", sender: nil)
+            
+        } else {
+            print("user is NOT signed in")
+            // ...
+        }
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -35,14 +61,33 @@ class SignUpViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func signUp(_ sender: Any) {
+        Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { (user, error) in
+            if error == nil {
+                let ref : DatabaseReference! = Database.database().reference()
+                ref.child("users").child(user!.uid).updateChildValues(["name": self.firstNameField.text!])
+                self.performSegue(withIdentifier: "mainview", sender: self)
+            }
+        }
     }
-    */
+    
+    func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
+    }
+    
 
 }

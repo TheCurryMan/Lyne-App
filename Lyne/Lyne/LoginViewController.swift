@@ -42,19 +42,7 @@ class LoginViewController: UIViewController {
         return true
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        if Auth.auth().currentUser != nil {
-            
-            User.currentUser.setUpUser()
-            self.performSegue(withIdentifier: "mainview", sender: nil)
-            
-        } else {
-            print("user is NOT signed in")
-            // ...
-        }
-        
-    }
-    
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

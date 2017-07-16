@@ -11,7 +11,7 @@ import Firebase
 import OneSignal
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
@@ -33,30 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver {
         // Recommend moving the below line to prompt for push after informing the user about
         //   how your app will use them.
         
-        promptPushNotification()
+       
         
         return true
     }
     
-    func promptPushNotification() {
-        OneSignal.promptForPushNotifications(userResponse: { accepted in
-            print("User accepted notifications: \(accepted)")
-            OneSignal.add(self as OSSubscriptionObserver)
-        })
-    }
     
-    func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges!) {
-        if !stateChanges.from.subscribed && stateChanges.to.subscribed {
-            print("Subscribed for OneSignal push notifications!")
-        }
-        print("SubscriptionStateChange: \n\(stateChanges)")
-        
-        //The player id is inside stateChanges. But be careful, this value can be nil if the user has not granted you permission to send notifications.
-        if let playerId = stateChanges.to.userId {
-            print("Current playerId \(playerId)")
-          
-        }
-    }
     
 
 

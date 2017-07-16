@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import OneSignal
 import FirebaseDatabase
 
 class JoinTableViewCell: UITableViewCell {
@@ -20,7 +21,7 @@ class JoinTableViewCell: UITableViewCell {
     @IBOutlet weak var lyneID: UILabel!
 }
 
-class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate {
+class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate, OSSubscriptionObserver {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -40,6 +41,7 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         locateMe()
         tableView.register( UINib(nibName: "LyneTableViewCell", bundle:nil), forCellReuseIdentifier: "join")
         getFirebaseData()
+        promptPushNotification()
         
     }
     
@@ -151,6 +153,27 @@ class JoinViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         let lyneLoc = CLLocation.init(latitude: otherLoc.latitude, longitude: otherLoc.longitude)
         return userLocation.distance(from: lyneLoc)
         
+    }
+    
+    func promptPushNotification() {
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+            OneSignal.add(self as OSSubscriptionObserver)
+        })
+    }
+    
+    func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges!) {
+        if !stateChanges.from.subscribed && stateChanges.to.subscribed {
+            print("Subscribed for OneSignal push notifications!")
+        }
+        print("SubscriptionStateChange: \n\(stateChanges)")
+        
+        //The player id is inside stateChanges. But be careful, this value can be nil if the user has not granted you permission to send notifications.
+        if let playerID = stateChanges.to.userId {
+            print("Current playerId \(playerID)")
+            ref.child("users").child(User.currentUser.UID!).updateChildValues(["playerID":playerID])
+            
+        }
     }
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ljz-Pd-foG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jJU-Ug-Yaa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -641,10 +641,10 @@
             </objects>
             <point key="canvasLocation" x="-2034.4000000000001" y="-322.48875562218893"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="uyJ-cP-R3S">
             <objects>
-                <viewController id="jJU-Ug-Yaa" sceneMemberID="viewController">
+                <viewController id="jJU-Ug-Yaa" customClass="SignUpViewController" customModule="Lyne" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TRN-Z7-VTS"/>
                         <viewControllerLayoutGuide type="bottom" id="nvT-tU-Vxh"/>
@@ -657,16 +657,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fSr-Jl-rqj">
-                                <rect key="frame" x="63" y="446" width="249" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="nND-v9-8s9"/>
-                                </constraints>
-                                <color key="textColor" red="0.28344750400000002" green="0.69443136449999998" blue="0.95240861180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ad-Bp-hFq">
+                                <rect key="frame" x="16" y="600" width="343" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Have an account? Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sie-xT-Jiu">
                                 <rect key="frame" x="63" y="408" width="249" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -690,6 +687,7 @@
                                 </state>
                                 <connections>
                                     <action selector="pressedSignIn:" destination="ljz-Pd-foG" eventType="touchUpInside" id="y7y-R9-1w7"/>
+                                    <action selector="signUp:" destination="jJU-Ug-Yaa" eventType="touchUpInside" id="zZY-bT-5ri"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TWF-ru-fl6">
@@ -708,13 +706,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ad-Bp-hFq">
-                                <rect key="frame" x="16" y="600" width="343" height="36"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Have an account? Log In">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fSr-Jl-rqj">
+                                <rect key="frame" x="63" y="446" width="249" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nND-v9-8s9"/>
+                                </constraints>
+                                <color key="textColor" red="0.28344750400000002" green="0.69443136449999998" blue="0.95240861180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -744,7 +745,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="fSr-Jl-rqj" id="P6Y-qS-Mkh"/>
+                        <outlet property="firstNameField" destination="sie-xT-Jiu" id="9Cq-aH-7G5"/>
+                        <outlet property="passwordField" destination="TWF-ru-fl6" id="cst-fg-nJW"/>
                         <segue destination="ljz-Pd-foG" kind="presentation" identifier="login" id="40h-EL-ADK"/>
+                        <segue destination="Nkk-c1-3rF" kind="presentation" identifier="mainview" id="vqj-zD-aLE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqz-fi-eQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -798,4 +803,7 @@
         <image name="search.png" width="24" height="24"/>
         <image name="settings.png" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vqj-zD-aLE"/>
+    </inferredMetricsTieBreakers>
 </document>
