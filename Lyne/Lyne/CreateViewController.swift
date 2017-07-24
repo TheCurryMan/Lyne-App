@@ -18,9 +18,11 @@ class CreateViewController: UIViewController {
     @IBOutlet weak var lyneName: UITextField!
     @IBOutlet weak var lyneID: UITextField!
     @IBOutlet weak var lyneLocation: UITextField!
+    @IBOutlet weak var backgroundView: UIView!
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
+        backgroundView.layer.cornerRadius = 10
     }
     
     override func viewDidDisappear(_ animated: Bool) {
