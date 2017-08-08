@@ -64,7 +64,7 @@ class User {
     func createLyne(lyne: Lyne) {
         let ref : DatabaseReference! = Database.database().reference()
         
-        let data = ["lat":lyne.loc!.latitude, "long":lyne.loc!.longitude, "name":lyne.name!, "num":lyne.num!, "pos":lyne.pos!, "users":lyne.users!] as [String : Any]
+        let data = ["lat":lyne.loc!.latitude, "lon":lyne.loc!.longitude, "name":lyne.name!, "num":lyne.num!, "pos":lyne.pos!, "users":lyne.users!] as [String : Any]
         
         ref.child("lynes").child("\(lyne.id!)").setValue(data)
         
