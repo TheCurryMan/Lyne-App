@@ -17,6 +17,10 @@ struct Lyne {
     var id : String?
     var users : [String]?
     
+    
+    
+    
+    
     mutating func updateValues(dict: [String: AnyObject]) {
     
         self.num = dict["num"] as? Int

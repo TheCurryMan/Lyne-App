@@ -90,7 +90,7 @@ class ManageLyneViewController: UIViewController {
     }
     
     func getUserData(uid: String) {
-        _ = ref.child("usrs").child(uid).observe(DataEventType.value, with: {(snapshot) in
+        _ = ref.child("users").child(uid).observe(DataEventType.value, with: {(snapshot) in
             let value = snapshot.value as? [String: AnyObject]
             if (self.playerid != value!["playerID"] as! String) {
                 self.playerid = value!["playerID"] as! String

@@ -55,7 +55,7 @@ class SignUpViewController: UIViewController {
             if error == nil {
                 User.currentUser.setUID()
                 let ref : DatabaseReference! = Database.database().reference()
-                ref.child("usrs").child(user!.uid).updateChildValues(["name": self.firstNameField.text!])
+                ref.child("users").child(user!.uid).updateChildValues(["name": self.firstNameField.text!])
                 self.performSegue(withIdentifier: "mainview", sender: self)
             }
         }
